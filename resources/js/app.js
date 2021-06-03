@@ -32,3 +32,17 @@ const app = new Vue({
     vuetify: Vuetify,
     el: '#app',
 });
+
+// "scripts": {
+//     "post-autoload-dump": [
+//         "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+//         "@php artisan package:discover --ansi"
+//     ],
+//     "post-root-package-install": [
+//         "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+//     ],
+//     "post-create-project-cmd": [
+//         "@php artisan key:generate --ansi",
+//         "@php artisan passport:keys"
+//     ]
+// }
