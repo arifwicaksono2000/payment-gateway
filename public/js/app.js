@@ -2039,10 +2039,88 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      links: ['Dashboard', 'Messages', 'Profile', 'Updates']
+      links: ["Dashboard", "Messages", "Profile", "Updates"]
     };
   }
 });
@@ -40181,7 +40259,7 @@ var render = function() {
                             "v-list",
                             { attrs: { color: "transparent" } },
                             [
-                              _vm._l(5, function(n) {
+                              _vm._l(1, function(n) {
                                 return _c(
                                   "v-list-item",
                                   { key: n, attrs: { link: "" } },
@@ -40190,11 +40268,7 @@ var render = function() {
                                       "v-list-item-content",
                                       [
                                         _c("v-list-item-title", [
-                                          _vm._v(
-                                            "\n                    List Item " +
-                                              _vm._s(n) +
-                                              "\n                  "
-                                          )
+                                          _vm._v(" Item " + _vm._s(n) + " ")
                                         ])
                                       ],
                                       1
@@ -40216,9 +40290,7 @@ var render = function() {
                                     "v-list-item-content",
                                     [
                                       _c("v-list-item-title", [
-                                        _vm._v(
-                                          "\n                    Refresh\n                  "
-                                        )
+                                        _vm._v(" Total Amount ")
                                       ])
                                     ],
                                     1
@@ -40239,9 +40311,359 @@ var render = function() {
                   _c(
                     "v-col",
                     [
-                      _c("v-sheet", {
-                        attrs: { "min-height": "70vh", rounded: "lg" }
-                      })
+                      _c(
+                        "v-sheet",
+                        { attrs: { "min-height": "70vh", rounded: "lg" } },
+                        [
+                          _c(
+                            "h2",
+                            {
+                              staticClass:
+                                "font-weight-400 black--text px-2 pt-2 my-2"
+                            },
+                            [
+                              _vm._v(
+                                "\n              Payment Options\n            "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("v-divider", { staticClass: "my-2" }),
+                          _vm._v(" "),
+                          _c(
+                            "v-col",
+                            [
+                              _c(
+                                "v-expansion-panels",
+                                { attrs: { focusable: "" } },
+                                _vm._l(1, function(item, i) {
+                                  return _c(
+                                    "v-expansion-panel",
+                                    { key: i },
+                                    [
+                                      _c(
+                                        "v-expansion-panel-header",
+                                        {
+                                          staticClass:
+                                            "font-weight-bold white--text",
+                                          attrs: { color: "primary" },
+                                          scopedSlots: _vm._u(
+                                            [
+                                              {
+                                                key: "actions",
+                                                fn: function() {
+                                                  return [
+                                                    _c(
+                                                      "v-icon",
+                                                      {
+                                                        attrs: {
+                                                          color: "white"
+                                                        }
+                                                      },
+                                                      [_vm._v(" $expand ")]
+                                                    )
+                                                  ]
+                                                },
+                                                proxy: true
+                                              }
+                                            ],
+                                            null,
+                                            true
+                                          )
+                                        },
+                                        [
+                                          _vm._v(
+                                            "Cash on Delivery\n                    "
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-expansion-panel-content",
+                                        { staticClass: "pt-2 grey--text" },
+                                        [
+                                          _c(
+                                            "v-expansion-panel-content-text",
+                                            { staticClass: "mb-2" },
+                                            [
+                                              _vm._v(
+                                                "\n                      Pembayaran akan dilakukan langsung kepada kurir setelah barang sampai pada anda.\n                    "
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "v-col",
+                                            { staticClass: "mt-4 pt-4" },
+                                            [
+                                              _c(
+                                                "v-btn",
+                                                {
+                                                  staticClass: "white--text",
+                                                  attrs: {
+                                                    color: "blue",
+                                                    elevation: "2",
+                                                    absolute: "",
+                                                    right: "",
+                                                    bottom: ""
+                                                  }
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "\n                        Continue\n                      "
+                                                  )
+                                                ]
+                                              )
+                                            ],
+                                            1
+                                          )
+                                        ],
+                                        1
+                                      )
+                                    ],
+                                    1
+                                  )
+                                }),
+                                1
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-col",
+                            [
+                              _c(
+                                "v-expansion-panels",
+                                { attrs: { focusable: "" } },
+                                _vm._l(1, function(item, i) {
+                                  return _c(
+                                    "v-expansion-panel",
+                                    { key: i },
+                                    [
+                                      _c(
+                                        "v-expansion-panel-header",
+                                        {
+                                          staticClass:
+                                            "font-weight-bold white--text",
+                                          attrs: { color: "primary" },
+                                          scopedSlots: _vm._u(
+                                            [
+                                              {
+                                                key: "actions",
+                                                fn: function() {
+                                                  return [
+                                                    _c(
+                                                      "v-icon",
+                                                      {
+                                                        attrs: {
+                                                          color: "white"
+                                                        }
+                                                      },
+                                                      [_vm._v(" $expand ")]
+                                                    )
+                                                  ]
+                                                },
+                                                proxy: true
+                                              }
+                                            ],
+                                            null,
+                                            true
+                                          )
+                                        },
+                                        [
+                                          _vm._v(
+                                            "E-Wallet\n                    "
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-expansion-panel-content",
+                                        { staticClass: "pt-2 grey--text" },
+                                        [
+                                          _c(
+                                            "v-expansion-panel-content-text",
+                                            { staticClass: "mb-2" },
+                                            [
+                                              _vm._v(
+                                                "\n                      Pembayaran menggunakan layanan E-Wallet Money Comes First\n                    "
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "v-col",
+                                            { staticClass: "mt-4 pt-4" },
+                                            [
+                                              _c(
+                                                "v-btn",
+                                                {
+                                                  staticClass: "white--text",
+                                                  attrs: {
+                                                    color: "blue",
+                                                    elevation: "2",
+                                                    absolute: "",
+                                                    right: "",
+                                                    bottom: ""
+                                                  }
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "\n                        Continue\n                      "
+                                                  )
+                                                ]
+                                              )
+                                            ],
+                                            1
+                                          )
+                                        ],
+                                        1
+                                      )
+                                    ],
+                                    1
+                                  )
+                                }),
+                                1
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-col",
+                            [
+                              _c(
+                                "v-expansion-panels",
+                                { attrs: { focusable: "" } },
+                                _vm._l(1, function(item, i) {
+                                  return _c(
+                                    "v-expansion-panel",
+                                    { key: i },
+                                    [
+                                      _c(
+                                        "v-expansion-panel-header",
+                                        {
+                                          staticClass:
+                                            "font-weight-bold white--text",
+                                          attrs: { color: "primary" },
+                                          scopedSlots: _vm._u(
+                                            [
+                                              {
+                                                key: "actions",
+                                                fn: function() {
+                                                  return [
+                                                    _c(
+                                                      "v-icon",
+                                                      {
+                                                        attrs: {
+                                                          color: "white"
+                                                        }
+                                                      },
+                                                      [_vm._v(" $expand ")]
+                                                    )
+                                                  ]
+                                                },
+                                                proxy: true
+                                              }
+                                            ],
+                                            null,
+                                            true
+                                          )
+                                        },
+                                        [
+                                          _vm._v(
+                                            "Virtual Account\n                    "
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-expansion-panel-content",
+                                        { staticClass: "pt-2 grey--text" },
+                                        [
+                                          _c(
+                                            "v-expansion-panel-content-text",
+                                            { staticClass: "mb-2" },
+                                            [
+                                              _vm._v(
+                                                "\n                      Pembayaran dapat dilakukan dengan menggunakan Virtual Account dengan mengikuti langkah - langkah berikut:"
+                                              ),
+                                              _c("br"),
+                                              _vm._v(
+                                                "\n                      1. Masukkan kartu ATM dan Pin."
+                                              ),
+                                              _c("br"),
+                                              _vm._v(
+                                                " \n                      2. Pilih Menu Bayar/Beli."
+                                              ),
+                                              _c("br"),
+                                              _vm._v(
+                                                "\n                      3. Pilih menu Lainnya, hingga menemukan menu Multipayment."
+                                              ),
+                                              _c("br"),
+                                              _vm._v(
+                                                "\n                      4. Masukkan kode biller Markopedia 8888, lalu pilih Benar."
+                                              ),
+                                              _c("br"),
+                                              _vm._v(
+                                                "\n                      5. Masukkan Nomor Virtual Account Markopedia yaitu 8888 + nomor_hp, lalu pilih tombol Benar."
+                                              ),
+                                              _c("br"),
+                                              _vm._v(
+                                                "\n                      6. Masukkan Angka 1 untuk memilih tagihan, lalu pilih tombol Ya."
+                                              ),
+                                              _c("br"),
+                                              _vm._v(
+                                                "\n                      7. Akan muncul konfirmasi pembayaran, lalu pilih tombol Ya."
+                                              ),
+                                              _c("br"),
+                                              _vm._v(
+                                                "\n                      8. Simpan struk sebagai bukti pembayaran Anda.\n                    "
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "v-col",
+                                            { staticClass: "mt-4 pt-4" },
+                                            [
+                                              _c(
+                                                "v-btn",
+                                                {
+                                                  staticClass: "white--text",
+                                                  attrs: {
+                                                    color: "blue ",
+                                                    elevation: "2",
+                                                    absolute: "",
+                                                    right: "",
+                                                    bottom: ""
+                                                  }
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "\n                        Continue\n                      "
+                                                  )
+                                                ]
+                                              )
+                                            ],
+                                            1
+                                          )
+                                        ],
+                                        1
+                                      )
+                                    ],
+                                    1
+                                  )
+                                }),
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
                     ],
                     1
                   )
@@ -96693,7 +97115,19 @@ Vue.component('wireframe', __webpack_require__(/*! ./components/Wireframe.vue */
 var app = new Vue({
   vuetify: _plugins_vuetify__WEBPACK_IMPORTED_MODULE_0__["default"],
   el: '#app'
-});
+}); // "scripts": {
+//     "post-autoload-dump": [
+//         "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+//         "@php artisan package:discover --ansi"
+//     ],
+//     "post-root-package-install": [
+//         "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+//     ],
+//     "post-create-project-cmd": [
+//         "@php artisan key:generate --ansi",
+//         "@php artisan passport:keys"
+//     ]
+// }
 
 /***/ }),
 
@@ -96762,11 +97196,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/index.js");
 /* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
 /* harmony import */ var vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VDivider */ "./node_modules/vuetify/lib/components/VDivider/index.js");
-/* harmony import */ var vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VList */ "./node_modules/vuetify/lib/components/VList/index.js");
-/* harmony import */ var vuetify_lib_components_VMain__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vuetify/lib/components/VMain */ "./node_modules/vuetify/lib/components/VMain/index.js");
-/* harmony import */ var vuetify_lib_components_VResponsive__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vuetify/lib/components/VResponsive */ "./node_modules/vuetify/lib/components/VResponsive/index.js");
-/* harmony import */ var vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! vuetify/lib/components/VSheet */ "./node_modules/vuetify/lib/components/VSheet/index.js");
-/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/index.js");
+/* harmony import */ var vuetify_lib_components_VExpansionPanel__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VExpansionPanel */ "./node_modules/vuetify/lib/components/VExpansionPanel/index.js");
+/* harmony import */ var vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vuetify/lib/components/VIcon */ "./node_modules/vuetify/lib/components/VIcon/index.js");
+/* harmony import */ var vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vuetify/lib/components/VList */ "./node_modules/vuetify/lib/components/VList/index.js");
+/* harmony import */ var vuetify_lib_components_VMain__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! vuetify/lib/components/VMain */ "./node_modules/vuetify/lib/components/VMain/index.js");
+/* harmony import */ var vuetify_lib_components_VResponsive__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! vuetify/lib/components/VResponsive */ "./node_modules/vuetify/lib/components/VResponsive/index.js");
+/* harmony import */ var vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! vuetify/lib/components/VSheet */ "./node_modules/vuetify/lib/components/VSheet/index.js");
+/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/index.js");
 
 
 
@@ -96804,7 +97240,12 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VApp: vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_4__["VApp"],VAppBar: vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_5__["VAppBar"],VAvatar: vuetify_lib_components_VAvatar__WEBPACK_IMPORTED_MODULE_6__["VAvatar"],VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_7__["VBtn"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VContainer"],VDivider: vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_9__["VDivider"],VList: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_10__["VList"],VListItem: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_10__["VListItem"],VListItemContent: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_10__["VListItemContent"],VListItemTitle: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_10__["VListItemTitle"],VMain: vuetify_lib_components_VMain__WEBPACK_IMPORTED_MODULE_11__["VMain"],VResponsive: vuetify_lib_components_VResponsive__WEBPACK_IMPORTED_MODULE_12__["VResponsive"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VRow"],VSheet: vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_13__["VSheet"],VSpacer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VSpacer"],VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_14__["VTextField"]})
+
+
+
+
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VApp: vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_4__["VApp"],VAppBar: vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_5__["VAppBar"],VAvatar: vuetify_lib_components_VAvatar__WEBPACK_IMPORTED_MODULE_6__["VAvatar"],VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_7__["VBtn"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VContainer"],VDivider: vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_9__["VDivider"],VExpansionPanel: vuetify_lib_components_VExpansionPanel__WEBPACK_IMPORTED_MODULE_10__["VExpansionPanel"],VExpansionPanelContent: vuetify_lib_components_VExpansionPanel__WEBPACK_IMPORTED_MODULE_10__["VExpansionPanelContent"],VExpansionPanelHeader: vuetify_lib_components_VExpansionPanel__WEBPACK_IMPORTED_MODULE_10__["VExpansionPanelHeader"],VExpansionPanels: vuetify_lib_components_VExpansionPanel__WEBPACK_IMPORTED_MODULE_10__["VExpansionPanels"],VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_11__["VIcon"],VList: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_12__["VList"],VListItem: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_12__["VListItem"],VListItemContent: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_12__["VListItemContent"],VListItemTitle: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_12__["VListItemTitle"],VMain: vuetify_lib_components_VMain__WEBPACK_IMPORTED_MODULE_13__["VMain"],VResponsive: vuetify_lib_components_VResponsive__WEBPACK_IMPORTED_MODULE_14__["VResponsive"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VRow"],VSheet: vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_15__["VSheet"],VSpacer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VSpacer"],VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_16__["VTextField"]})
 
 
 /* hot reload */
@@ -96884,8 +97325,8 @@ var opts = {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\User\Documents\Personal Documents\Kuliah\Akademik\Semester 6\Mata Kuliah\3. Integrasi Aplikasi dan Informasi\Project IAI\payment-gateway\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\User\Documents\Personal Documents\Kuliah\Akademik\Semester 6\Mata Kuliah\3. Integrasi Aplikasi dan Informasi\Project IAI\payment-gateway\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! E:\IAI\payment-gateway\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! E:\IAI\payment-gateway\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
