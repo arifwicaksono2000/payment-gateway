@@ -41,7 +41,7 @@
             <v-sheet rounded="lg">
               <v-list color="transparent">
                 <v-list-item
-                  v-for="n in 5"
+                  v-for="n in 1"
                   :key="n"
                   link
                 >
@@ -73,7 +73,37 @@
               min-height="70vh"
               rounded="lg"
             >
-              <!--  -->
+            <v-col>
+              <v-sheet
+                color="white"
+                elevation="1"
+                height="100"
+                class="d-flex justify-content-center mx-4 mt-4"
+              >
+              <v-btn
+              color="primary"
+              elevation="2"
+              bottom="true"
+            ></v-btn>
+              
+              </v-sheet>
+            </v-col>
+            <v-col>
+              <v-sheet
+                color="white"
+                elevation="1"
+                height="100"
+                class="d-flex justify-content-center mx-4 mt-4"
+              ></v-sheet>
+            </v-col>
+            <v-col>
+              <v-sheet
+                color="white"
+                elevation="1"
+                height="100"
+                class="d-flex justify-content-center mx-4 mt-4"
+              ></v-sheet>
+            </v-col>
             </v-sheet>
           </v-col>
         </v-row>

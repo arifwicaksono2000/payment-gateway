@@ -2039,6 +2039,36 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -40181,7 +40211,7 @@ var render = function() {
                             "v-list",
                             { attrs: { color: "transparent" } },
                             [
-                              _vm._l(5, function(n) {
+                              _vm._l(1, function(n) {
                                 return _c(
                                   "v-list-item",
                                   { key: n, attrs: { link: "" } },
@@ -40239,9 +40269,73 @@ var render = function() {
                   _c(
                     "v-col",
                     [
-                      _c("v-sheet", {
-                        attrs: { "min-height": "70vh", rounded: "lg" }
-                      })
+                      _c(
+                        "v-sheet",
+                        { attrs: { "min-height": "70vh", rounded: "lg" } },
+                        [
+                          _c(
+                            "v-col",
+                            [
+                              _c(
+                                "v-sheet",
+                                {
+                                  staticClass:
+                                    "d-flex justify-content-center mx-4 mt-4",
+                                  attrs: {
+                                    color: "white",
+                                    elevation: "1",
+                                    height: "100"
+                                  }
+                                },
+                                [
+                                  _c("v-btn", {
+                                    attrs: {
+                                      color: "primary",
+                                      elevation: "2",
+                                      bottom: "true"
+                                    }
+                                  })
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-col",
+                            [
+                              _c("v-sheet", {
+                                staticClass:
+                                  "d-flex justify-content-center mx-4 mt-4",
+                                attrs: {
+                                  color: "white",
+                                  elevation: "1",
+                                  height: "100"
+                                }
+                              })
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-col",
+                            [
+                              _c("v-sheet", {
+                                staticClass:
+                                  "d-flex justify-content-center mx-4 mt-4",
+                                attrs: {
+                                  color: "white",
+                                  elevation: "1",
+                                  height: "100"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
                     ],
                     1
                   )
@@ -96693,7 +96787,19 @@ Vue.component('wireframe', __webpack_require__(/*! ./components/Wireframe.vue */
 var app = new Vue({
   vuetify: _plugins_vuetify__WEBPACK_IMPORTED_MODULE_0__["default"],
   el: '#app'
-});
+}); // "scripts": {
+//     "post-autoload-dump": [
+//         "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+//         "@php artisan package:discover --ansi"
+//     ],
+//     "post-root-package-install": [
+//         "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+//     ],
+//     "post-create-project-cmd": [
+//         "@php artisan key:generate --ansi",
+//         "@php artisan passport:keys"
+//     ]
+// }
 
 /***/ }),
 
