@@ -8,7 +8,8 @@
         >
             <v-list-item-content>
             <v-list-item-title>
-                List dong {{ n }}
+                <p>Barang:</p>
+                <p>Harga:</p>
             </v-list-item-title>
             </v-list-item-content>
         </v-list-item>
@@ -21,7 +22,7 @@
         >
             <v-list-item-content>
             <v-list-item-title>
-                Total item
+                <strong>Total:</strong>
             </v-list-item-title>
             </v-list-item-content>
         </v-list-item>

@@ -2,23 +2,9 @@
   <v-app id="inspire">
     <v-app-bar app color="white" flat>
       <v-container class="py-0 fill-height">
-        <v-avatar class="mr-10" color="grey darken-1" size="32"></v-avatar>
-
-        <v-btn v-for="link in links" :key="link" text>
-          {{ link }}
-        </v-btn>
-
-        <v-spacer></v-spacer>
-
-        <v-responsive max-width="260">
-          <v-text-field
-            dense
-            flat
-            hide-details
-            rounded
-            solo-inverted
-          ></v-text-field>
-        </v-responsive>
+        <v-toolbar-title>
+          Payment Gateway Markopedia
+        </v-toolbar-title>
       </v-container>
     </v-app-bar>
 
@@ -26,24 +12,7 @@
       <v-container>
         <v-row>
           <v-col cols="2">
-<<<<<<< HEAD
-            <v-sheet rounded="lg">
-              <v-list color="transparent">
-                <v-list-item v-for="n in 1" :key="n" link>
-                  <v-list-item-content>
-                    <v-list-item-title> Item {{ n }} </v-list-item-title>
-                  </v-list-item-content>
-                </v-list-item>
-
-                <v-divider class="my-2"></v-divider>
-
-                <v-list-item link color="grey lighten-4">
-                  <v-list-item-content>
-                    <v-list-item-title> Total Amount </v-list-item-title>
-                  </v-list-item-content>
-                </v-list-item>
-              </v-list>
-            </v-sheet>
+            <object-bar></object-bar>
           </v-col>
 
           <v-col>
@@ -153,48 +122,6 @@
                   </v-expansion-panel>
                 </v-expansion-panels>
               </v-col>
-=======
-           <object-bar></object-bar>
-          </v-col>
-
-          <v-col>
-            <v-sheet
-              min-height="70vh"
-              rounded="lg"
-            >
-            <v-col>
-              <v-sheet
-                color="white"
-                elevation="1"
-                height="100"
-                class="d-flex justify-content-center mx-4 mt-4"
-              >
-              <v-btn
-              color="primary"
-              elevation="2"
-              bottom
-              href="../../status"
-            ></v-btn>
-              
-              </v-sheet>
-            </v-col>
-            <v-col>
-              <v-sheet
-                color="white"
-                elevation="1"
-                height="100"
-                class="d-flex justify-content-center mx-4 mt-4"
-              ></v-sheet>
-            </v-col>
-            <v-col>
-              <v-sheet
-                color="white"
-                elevation="1"
-                height="100"
-                class="d-flex justify-content-center mx-4 mt-4"
-              ></v-sheet>
-            </v-col>
->>>>>>> f701e66dfc8b69cdfc1b7161e51feea5355c3795
             </v-sheet>
           </v-col>
         </v-row>
@@ -204,27 +131,11 @@
 </template>
 
 <script>
-<<<<<<< HEAD
+import ObjectBar from './ObjectBar.vue';
 export default {
+  components: { ObjectBar },
   data: () => ({
     links: ["Dashboard", "Messages", "Profile", "Updates"],
   }),
 };
-=======
-import ObjectBar from './ObjectBar'
-  export default {
-    data: () => ({
-      links: [
-        'Topan',
-        'Messages',
-        'Profile',
-        'Updates',
-      ],
-    }),
-
-    components: {
-      'object-bar': ObjectBar,
-    }
-  }
->>>>>>> f701e66dfc8b69cdfc1b7161e51feea5355c3795
 </script>
