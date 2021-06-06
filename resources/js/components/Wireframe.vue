@@ -26,6 +26,7 @@
       <v-container>
         <v-row>
           <v-col cols="2">
+<<<<<<< HEAD
             <v-sheet rounded="lg">
               <v-list color="transparent">
                 <v-list-item v-for="n in 1" :key="n" link>
@@ -152,6 +153,48 @@
                   </v-expansion-panel>
                 </v-expansion-panels>
               </v-col>
+=======
+           <object-bar></object-bar>
+          </v-col>
+
+          <v-col>
+            <v-sheet
+              min-height="70vh"
+              rounded="lg"
+            >
+            <v-col>
+              <v-sheet
+                color="white"
+                elevation="1"
+                height="100"
+                class="d-flex justify-content-center mx-4 mt-4"
+              >
+              <v-btn
+              color="primary"
+              elevation="2"
+              bottom
+              href="../../status"
+            ></v-btn>
+              
+              </v-sheet>
+            </v-col>
+            <v-col>
+              <v-sheet
+                color="white"
+                elevation="1"
+                height="100"
+                class="d-flex justify-content-center mx-4 mt-4"
+              ></v-sheet>
+            </v-col>
+            <v-col>
+              <v-sheet
+                color="white"
+                elevation="1"
+                height="100"
+                class="d-flex justify-content-center mx-4 mt-4"
+              ></v-sheet>
+            </v-col>
+>>>>>>> f701e66dfc8b69cdfc1b7161e51feea5355c3795
             </v-sheet>
           </v-col>
         </v-row>
@@ -161,9 +204,27 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 export default {
   data: () => ({
     links: ["Dashboard", "Messages", "Profile", "Updates"],
   }),
 };
+=======
+import ObjectBar from './ObjectBar'
+  export default {
+    data: () => ({
+      links: [
+        'Topan',
+        'Messages',
+        'Profile',
+        'Updates',
+      ],
+    }),
+
+    components: {
+      'object-bar': ObjectBar,
+    }
+  }
+>>>>>>> f701e66dfc8b69cdfc1b7161e51feea5355c3795
 </script>

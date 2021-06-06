@@ -1946,10 +1946,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Wireframe.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vuetify-loader/lib/loader.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Wireframe.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Status.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vuetify-loader/lib/loader.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Status.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1977,153 +1977,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      links: ["Dashboard", "Messages", "Profile", "Updates"]
-    };
-  }
-});
+/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Wireframe.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vuetify-loader/lib/loader.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Wireframe.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: E:\\IAI\\payment-gateway\\resources\\js\\components\\Wireframe.vue: Unexpected token (207:0)\n\n\u001b[0m \u001b[90m 205 |\u001b[39m \u001b[90m//\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 206 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 207 |\u001b[39m \u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<\u001b[39m \u001b[33mHEAD\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 208 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36mdefault\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 209 |\u001b[39m   data\u001b[33m:\u001b[39m () \u001b[33m=>\u001b[39m ({\u001b[0m\n\u001b[0m \u001b[90m 210 |\u001b[39m     links\u001b[33m:\u001b[39m [\u001b[32m\"Dashboard\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"Messages\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"Profile\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"Updates\"\u001b[39m]\u001b[33m,\u001b[39m\u001b[0m\n    at Parser._raise (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:810:17)\n    at Parser.raiseWithData (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:803:17)\n    at Parser.raise (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:764:17)\n    at Parser.unexpected (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:9980:16)\n    at Parser.parseExprAtom (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11382:20)\n    at Parser.parseExprSubscripts (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10954:23)\n    at Parser.parseUpdate (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10934:21)\n    at Parser.parseMaybeUnary (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10912:23)\n    at Parser.parseExprOps (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10769:23)\n    at Parser.parseMaybeConditional (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10743:23)\n    at Parser.parseMaybeAssign (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10706:21)\n    at Parser.parseExpressionBase (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10651:23)\n    at E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10645:39\n    at Parser.allowInAnd (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:12390:16)\n    at Parser.parseExpression (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10645:17)\n    at Parser.parseStatementContent (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:12727:23)\n    at Parser.parseStatement (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:12596:17)\n    at Parser.parseBlockOrModuleBlockBody (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:13185:25)\n    at Parser.parseBlockBody (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:13176:10)\n    at Parser.parseProgram (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:12519:10)\n    at Parser.parseTopLevel (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:12510:25)\n    at Parser.parse (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:14241:10)\n    at parse (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:14293:38)\n    at parser (E:\\IAI\\payment-gateway\\node_modules\\@babel\\core\\lib\\parser\\index.js:52:34)\n    at parser.next (<anonymous>)\n    at normalizeFile (E:\\IAI\\payment-gateway\\node_modules\\@babel\\core\\lib\\transformation\\normalize-file.js:82:38)\n    at normalizeFile.next (<anonymous>)\n    at run (E:\\IAI\\payment-gateway\\node_modules\\@babel\\core\\lib\\transformation\\index.js:29:50)\n    at run.next (<anonymous>)\n    at Function.transform (E:\\IAI\\payment-gateway\\node_modules\\@babel\\core\\lib\\transform.js:25:41)\n    at transform.next (<anonymous>)\n    at step (E:\\IAI\\payment-gateway\\node_modules\\gensync\\index.js:261:32)\n    at E:\\IAI\\payment-gateway\\node_modules\\gensync\\index.js:273:13\n    at async.call.result.err.err (E:\\IAI\\payment-gateway\\node_modules\\gensync\\index.js:223:11)");
 
 /***/ }),
 
@@ -40174,10 +40039,10 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Wireframe.vue?vue&type=template&id=03ceea2d&":
-/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vuetify-loader/lib/loader.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Wireframe.vue?vue&type=template&id=03ceea2d& ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Status.vue?vue&type=template&id=ed6f95c6&":
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vuetify-loader/lib/loader.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Status.vue?vue&type=template&id=ed6f95c6& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -40194,50 +40059,6 @@ var render = function() {
     { attrs: { id: "inspire" } },
     [
       _c(
-        "v-app-bar",
-        { attrs: { app: "", color: "white", flat: "" } },
-        [
-          _c(
-            "v-container",
-            { staticClass: "py-0 fill-height" },
-            [
-              _c("v-avatar", {
-                staticClass: "mr-10",
-                attrs: { color: "grey darken-1", size: "32" }
-              }),
-              _vm._v(" "),
-              _vm._l(_vm.links, function(link) {
-                return _c("v-btn", { key: link, attrs: { text: "" } }, [
-                  _vm._v("\n        " + _vm._s(link) + "\n      ")
-                ])
-              }),
-              _vm._v(" "),
-              _c("v-spacer"),
-              _vm._v(" "),
-              _c(
-                "v-responsive",
-                { attrs: { "max-width": "260" } },
-                [
-                  _c("v-text-field", {
-                    attrs: {
-                      dense: "",
-                      flat: "",
-                      "hide-details": "",
-                      rounded: "",
-                      "solo-inverted": ""
-                    }
-                  })
-                ],
-                1
-              )
-            ],
-            2
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
         "v-main",
         { staticClass: "grey lighten-3" },
         [
@@ -40247,423 +40068,14 @@ var render = function() {
               _c(
                 "v-row",
                 [
-                  _c(
-                    "v-col",
-                    { attrs: { cols: "2" } },
-                    [
-                      _c(
-                        "v-sheet",
-                        { attrs: { rounded: "lg" } },
-                        [
-                          _c(
-                            "v-list",
-                            { attrs: { color: "transparent" } },
-                            [
-                              _vm._l(1, function(n) {
-                                return _c(
-                                  "v-list-item",
-                                  { key: n, attrs: { link: "" } },
-                                  [
-                                    _c(
-                                      "v-list-item-content",
-                                      [
-                                        _c("v-list-item-title", [
-                                          _vm._v(" Item " + _vm._s(n) + " ")
-                                        ])
-                                      ],
-                                      1
-                                    )
-                                  ],
-                                  1
-                                )
-                              }),
-                              _vm._v(" "),
-                              _c("v-divider", { staticClass: "my-2" }),
-                              _vm._v(" "),
-                              _c(
-                                "v-list-item",
-                                {
-                                  attrs: { link: "", color: "grey lighten-4" }
-                                },
-                                [
-                                  _c(
-                                    "v-list-item-content",
-                                    [
-                                      _c("v-list-item-title", [
-                                        _vm._v(" Total Amount ")
-                                      ])
-                                    ],
-                                    1
-                                  )
-                                ],
-                                1
-                              )
-                            ],
-                            2
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  ),
+                  _c("v-col", { attrs: { cols: "2" } }, [_c("object-bar")], 1),
                   _vm._v(" "),
                   _c(
                     "v-col",
                     [
-                      _c(
-                        "v-sheet",
-                        { attrs: { "min-height": "70vh", rounded: "lg" } },
-                        [
-                          _c(
-                            "h2",
-                            {
-                              staticClass:
-                                "font-weight-400 black--text px-2 pt-2 my-2"
-                            },
-                            [
-                              _vm._v(
-                                "\n              Payment Options\n            "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("v-divider", { staticClass: "my-2" }),
-                          _vm._v(" "),
-                          _c(
-                            "v-col",
-                            [
-                              _c(
-                                "v-expansion-panels",
-                                { attrs: { focusable: "" } },
-                                _vm._l(1, function(item, i) {
-                                  return _c(
-                                    "v-expansion-panel",
-                                    { key: i },
-                                    [
-                                      _c(
-                                        "v-expansion-panel-header",
-                                        {
-                                          staticClass:
-                                            "font-weight-bold white--text",
-                                          attrs: { color: "primary" },
-                                          scopedSlots: _vm._u(
-                                            [
-                                              {
-                                                key: "actions",
-                                                fn: function() {
-                                                  return [
-                                                    _c(
-                                                      "v-icon",
-                                                      {
-                                                        attrs: {
-                                                          color: "white"
-                                                        }
-                                                      },
-                                                      [_vm._v(" $expand ")]
-                                                    )
-                                                  ]
-                                                },
-                                                proxy: true
-                                              }
-                                            ],
-                                            null,
-                                            true
-                                          )
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Cash on Delivery\n                    "
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-expansion-panel-content",
-                                        { staticClass: "pt-2 grey--text" },
-                                        [
-                                          _c(
-                                            "v-expansion-panel-content-text",
-                                            { staticClass: "mb-2" },
-                                            [
-                                              _vm._v(
-                                                "\n                      Pembayaran akan dilakukan langsung kepada kurir setelah barang sampai pada anda.\n                    "
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "v-col",
-                                            { staticClass: "mt-4 pt-4" },
-                                            [
-                                              _c(
-                                                "v-btn",
-                                                {
-                                                  staticClass: "white--text",
-                                                  attrs: {
-                                                    color: "blue",
-                                                    elevation: "2",
-                                                    absolute: "",
-                                                    right: "",
-                                                    bottom: ""
-                                                  }
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "\n                        Continue\n                      "
-                                                  )
-                                                ]
-                                              )
-                                            ],
-                                            1
-                                          )
-                                        ],
-                                        1
-                                      )
-                                    ],
-                                    1
-                                  )
-                                }),
-                                1
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-col",
-                            [
-                              _c(
-                                "v-expansion-panels",
-                                { attrs: { focusable: "" } },
-                                _vm._l(1, function(item, i) {
-                                  return _c(
-                                    "v-expansion-panel",
-                                    { key: i },
-                                    [
-                                      _c(
-                                        "v-expansion-panel-header",
-                                        {
-                                          staticClass:
-                                            "font-weight-bold white--text",
-                                          attrs: { color: "primary" },
-                                          scopedSlots: _vm._u(
-                                            [
-                                              {
-                                                key: "actions",
-                                                fn: function() {
-                                                  return [
-                                                    _c(
-                                                      "v-icon",
-                                                      {
-                                                        attrs: {
-                                                          color: "white"
-                                                        }
-                                                      },
-                                                      [_vm._v(" $expand ")]
-                                                    )
-                                                  ]
-                                                },
-                                                proxy: true
-                                              }
-                                            ],
-                                            null,
-                                            true
-                                          )
-                                        },
-                                        [
-                                          _vm._v(
-                                            "E-Wallet\n                    "
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-expansion-panel-content",
-                                        { staticClass: "pt-2 grey--text" },
-                                        [
-                                          _c(
-                                            "v-expansion-panel-content-text",
-                                            { staticClass: "mb-2" },
-                                            [
-                                              _vm._v(
-                                                "\n                      Pembayaran menggunakan layanan E-Wallet Money Comes First\n                    "
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "v-col",
-                                            { staticClass: "mt-4 pt-4" },
-                                            [
-                                              _c(
-                                                "v-btn",
-                                                {
-                                                  staticClass: "white--text",
-                                                  attrs: {
-                                                    color: "blue",
-                                                    elevation: "2",
-                                                    absolute: "",
-                                                    right: "",
-                                                    bottom: ""
-                                                  }
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "\n                        Continue\n                      "
-                                                  )
-                                                ]
-                                              )
-                                            ],
-                                            1
-                                          )
-                                        ],
-                                        1
-                                      )
-                                    ],
-                                    1
-                                  )
-                                }),
-                                1
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-col",
-                            [
-                              _c(
-                                "v-expansion-panels",
-                                { attrs: { focusable: "" } },
-                                _vm._l(1, function(item, i) {
-                                  return _c(
-                                    "v-expansion-panel",
-                                    { key: i },
-                                    [
-                                      _c(
-                                        "v-expansion-panel-header",
-                                        {
-                                          staticClass:
-                                            "font-weight-bold white--text",
-                                          attrs: { color: "primary" },
-                                          scopedSlots: _vm._u(
-                                            [
-                                              {
-                                                key: "actions",
-                                                fn: function() {
-                                                  return [
-                                                    _c(
-                                                      "v-icon",
-                                                      {
-                                                        attrs: {
-                                                          color: "white"
-                                                        }
-                                                      },
-                                                      [_vm._v(" $expand ")]
-                                                    )
-                                                  ]
-                                                },
-                                                proxy: true
-                                              }
-                                            ],
-                                            null,
-                                            true
-                                          )
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Virtual Account\n                    "
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-expansion-panel-content",
-                                        { staticClass: "pt-2 grey--text" },
-                                        [
-                                          _c(
-                                            "v-expansion-panel-content-text",
-                                            { staticClass: "mb-2" },
-                                            [
-                                              _vm._v(
-                                                "\n                      Pembayaran dapat dilakukan dengan menggunakan Virtual Account dengan mengikuti langkah - langkah berikut:"
-                                              ),
-                                              _c("br"),
-                                              _vm._v(
-                                                "\n                      1. Masukkan kartu ATM dan Pin."
-                                              ),
-                                              _c("br"),
-                                              _vm._v(
-                                                " \n                      2. Pilih Menu Bayar/Beli."
-                                              ),
-                                              _c("br"),
-                                              _vm._v(
-                                                "\n                      3. Pilih menu Lainnya, hingga menemukan menu Multipayment."
-                                              ),
-                                              _c("br"),
-                                              _vm._v(
-                                                "\n                      4. Masukkan kode biller Markopedia 8888, lalu pilih Benar."
-                                              ),
-                                              _c("br"),
-                                              _vm._v(
-                                                "\n                      5. Masukkan Nomor Virtual Account Markopedia yaitu 8888 + nomor_hp, lalu pilih tombol Benar."
-                                              ),
-                                              _c("br"),
-                                              _vm._v(
-                                                "\n                      6. Masukkan Angka 1 untuk memilih tagihan, lalu pilih tombol Ya."
-                                              ),
-                                              _c("br"),
-                                              _vm._v(
-                                                "\n                      7. Akan muncul konfirmasi pembayaran, lalu pilih tombol Ya."
-                                              ),
-                                              _c("br"),
-                                              _vm._v(
-                                                "\n                      8. Simpan struk sebagai bukti pembayaran Anda.\n                    "
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "v-col",
-                                            { staticClass: "mt-4 pt-4" },
-                                            [
-                                              _c(
-                                                "v-btn",
-                                                {
-                                                  staticClass: "white--text",
-                                                  attrs: {
-                                                    color: "blue ",
-                                                    elevation: "2",
-                                                    absolute: "",
-                                                    right: "",
-                                                    bottom: ""
-                                                  }
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "\n                        Continue\n                      "
-                                                  )
-                                                ]
-                                              )
-                                            ],
-                                            1
-                                          )
-                                        ],
-                                        1
-                                      )
-                                    ],
-                                    1
-                                  )
-                                }),
-                                1
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
+                      _c("v-sheet", {
+                        attrs: { "min-height": "70vh", rounded: "lg" }
+                      })
                     ],
                     1
                   )
@@ -40682,6 +40094,24 @@ var render = function() {
 }
 var staticRenderFns = []
 render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Wireframe.vue?vue&type=template&id=03ceea2d&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vuetify-loader/lib/loader.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Wireframe.vue?vue&type=template&id=03ceea2d& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function () {}
+var staticRenderFns = []
 
 
 
@@ -97106,6 +96536,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('wireframe', __webpack_require__(/*! ./components/Wireframe.vue */ "./resources/js/components/Wireframe.vue")["default"]);
+Vue.component('status', __webpack_require__(/*! ./components/Status.vue */ "./resources/js/components/Status.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -97115,6 +96546,10 @@ Vue.component('wireframe', __webpack_require__(/*! ./components/Wireframe.vue */
 var app = new Vue({
   vuetify: _plugins_vuetify__WEBPACK_IMPORTED_MODULE_0__["default"],
   el: '#app'
+});
+var app2 = new Vue({
+  vuetify: _plugins_vuetify__WEBPACK_IMPORTED_MODULE_0__["default"],
+  el: '#app2'
 }); // "scripts": {
 //     "post-autoload-dump": [
 //         "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
@@ -97173,6 +96608,92 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/Status.vue":
+/*!********************************************!*\
+  !*** ./resources/js/components/Status.vue ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Status_vue_vue_type_template_id_ed6f95c6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Status.vue?vue&type=template&id=ed6f95c6& */ "./resources/js/components/Status.vue?vue&type=template&id=ed6f95c6&");
+/* harmony import */ var _Status_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Status.vue?vue&type=script&lang=js& */ "./resources/js/components/Status.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vuetify-loader/lib/runtime/installComponents.js */ "./node_modules/vuetify-loader/lib/runtime/installComponents.js");
+/* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuetify/lib/components/VApp */ "./node_modules/vuetify/lib/components/VApp/index.js");
+/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
+/* harmony import */ var vuetify_lib_components_VMain__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VMain */ "./node_modules/vuetify/lib/components/VMain/index.js");
+/* harmony import */ var vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VSheet */ "./node_modules/vuetify/lib/components/VSheet/index.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Status_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Status_vue_vue_type_template_id_ed6f95c6___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Status_vue_vue_type_template_id_ed6f95c6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* vuetify-loader */
+
+
+
+
+
+
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VApp: vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_4__["VApp"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_5__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_5__["VContainer"],VMain: vuetify_lib_components_VMain__WEBPACK_IMPORTED_MODULE_6__["VMain"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_5__["VRow"],VSheet: vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_7__["VSheet"]})
+
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Status.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Status.vue?vue&type=script&lang=js&":
+/*!*********************************************************************!*\
+  !*** ./resources/js/components/Status.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vuetify_loader_lib_loader_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Status_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vuetify-loader/lib/loader.js??ref--11-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Status.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Status.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vuetify_loader_lib_loader_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Status_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Status.vue?vue&type=template&id=ed6f95c6&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/Status.vue?vue&type=template&id=ed6f95c6& ***!
+  \***************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vuetify_loader_lib_loader_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Status_vue_vue_type_template_id_ed6f95c6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vuetify-loader/lib/loader.js??ref--11-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Status.vue?vue&type=template&id=ed6f95c6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Status.vue?vue&type=template&id=ed6f95c6&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vuetify_loader_lib_loader_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Status_vue_vue_type_template_id_ed6f95c6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vuetify_loader_lib_loader_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Status_vue_vue_type_template_id_ed6f95c6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 

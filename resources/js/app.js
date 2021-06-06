@@ -21,6 +21,7 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('wireframe', require('./components/Wireframe.vue').default);
+Vue.component('status', require('./components/Status.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -31,6 +32,11 @@ Vue.component('wireframe', require('./components/Wireframe.vue').default);
 const app = new Vue({
     vuetify: Vuetify,
     el: '#app',
+});
+
+const app2 = new Vue({
+    vuetify: Vuetify,
+    el: '#app2',
 });
 
 // "scripts": {

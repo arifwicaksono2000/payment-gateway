@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/status', function () {
+    return view('status');
+});
+
 Route::get('/test', function () {
     return view('welcome');
 });
