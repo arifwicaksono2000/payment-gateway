@@ -1,22 +1,10 @@
 <template>
   <v-app id="inspire">
-    <v-app-bar
-      app
-      color="white"
-      flat
-    >
+    <v-app-bar app color="white" flat>
       <v-container class="py-0 fill-height">
-        <v-avatar
-          class="mr-10"
-          color="grey darken-1"
-          size="32"
-        ></v-avatar>
+        <v-avatar class="mr-10" color="grey darken-1" size="32"></v-avatar>
 
-        <v-btn
-          v-for="link in links"
-          :key="link"
-          text
-        >
+        <v-btn v-for="link in links" :key="link" text>
           {{ link }}
         </v-btn>
 
@@ -38,6 +26,134 @@
       <v-container>
         <v-row>
           <v-col cols="2">
+<<<<<<< HEAD
+            <v-sheet rounded="lg">
+              <v-list color="transparent">
+                <v-list-item v-for="n in 1" :key="n" link>
+                  <v-list-item-content>
+                    <v-list-item-title> Item {{ n }} </v-list-item-title>
+                  </v-list-item-content>
+                </v-list-item>
+
+                <v-divider class="my-2"></v-divider>
+
+                <v-list-item link color="grey lighten-4">
+                  <v-list-item-content>
+                    <v-list-item-title> Total Amount </v-list-item-title>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list>
+            </v-sheet>
+          </v-col>
+
+          <v-col>
+            <v-sheet min-height="70vh" rounded="lg">
+              <h2 class="font-weight-400 black--text px-2 pt-2 my-2">
+                Payment Options
+              </h2>
+              <v-divider class="my-2"></v-divider>
+              <v-col>
+                <v-expansion-panels focusable>
+                  <v-expansion-panel v-for="(item, i) in 1" :key="i">
+                    <v-expansion-panel-header
+                      class="font-weight-bold white--text"
+                      color="primary"
+                      >Cash on Delivery
+                      <template v-slot:actions>
+                        <v-icon color="white"> $expand </v-icon>
+                      </template>
+                    </v-expansion-panel-header>
+                    <v-expansion-panel-content class="pt-2 grey--text">
+                      <v-expansion-panel-content-text class="mb-2">
+                        Pembayaran akan dilakukan langsung kepada kurir setelah barang sampai pada anda.
+                      </v-expansion-panel-content-text>
+                      <v-col class="mt-4 pt-4">
+                        <v-btn
+                          class="white--text"
+                          color="blue"
+                          elevation="2"
+                          absolute
+                          right
+                          bottom
+                        >
+                          Continue
+                        </v-btn>
+                      </v-col>
+                    </v-expansion-panel-content>
+                  </v-expansion-panel>
+                </v-expansion-panels>
+              </v-col>
+              <v-col>
+                <v-expansion-panels focusable>
+                  <v-expansion-panel v-for="(item, i) in 1" :key="i">
+                    <v-expansion-panel-header
+                      class="font-weight-bold white--text"
+                      color="primary"
+                      >E-Wallet
+                      <template v-slot:actions>
+                        <v-icon color="white"> $expand </v-icon>
+                      </template>
+                    </v-expansion-panel-header>
+                    <v-expansion-panel-content class="pt-2 grey--text">
+                      <v-expansion-panel-content-text class="mb-2">
+                        Pembayaran menggunakan layanan E-Wallet Money Comes First
+                      </v-expansion-panel-content-text>
+                      <v-col class="mt-4 pt-4">
+                        <v-btn
+                          class="white--text"
+                          color="blue"
+                          elevation="2"
+                          absolute
+                          right
+                          bottom
+                        >
+                          Continue
+                        </v-btn>
+                      </v-col>
+                    </v-expansion-panel-content>
+                  </v-expansion-panel>
+                </v-expansion-panels>
+              </v-col>
+              <v-col>
+                <v-expansion-panels focusable>
+                  <v-expansion-panel v-for="(item, i) in 1" :key="i">
+                    <v-expansion-panel-header
+                      class="font-weight-bold white--text"
+                      color="primary"
+                      >Virtual Account
+                      <template v-slot:actions>
+                        <v-icon color="white"> $expand </v-icon>
+                      </template>
+                    </v-expansion-panel-header>
+                    <v-expansion-panel-content class="pt-2 grey--text">
+                      <v-expansion-panel-content-text class="mb-2">
+                        Pembayaran dapat dilakukan dengan menggunakan Virtual Account dengan mengikuti langkah - langkah berikut:<br>
+                        1. Masukkan kartu ATM dan Pin.<br> 
+                        2. Pilih Menu Bayar/Beli.<br>
+                        3. Pilih menu Lainnya, hingga menemukan menu Multipayment.<br>
+                        4. Masukkan kode biller Markopedia 8888, lalu pilih Benar.<br>
+                        5. Masukkan Nomor Virtual Account Markopedia yaitu 8888 + nomor_hp, lalu pilih tombol Benar.<br>
+                        6. Masukkan Angka 1 untuk memilih tagihan, lalu pilih tombol Ya.<br>
+                        7. Akan muncul konfirmasi pembayaran, lalu pilih tombol Ya.<br>
+                        8. Simpan struk sebagai bukti pembayaran Anda.
+                      </v-expansion-panel-content-text>
+                      <v-col class="mt-4 pt-4">
+                        <v-btn
+                          class="white--text"
+                          color="blue "
+                          elevation="2"
+                          absolute
+                          right
+                          bottom
+                        >
+                          Continue
+                        </v-btn>
+                      </v-col>
+                    </v-expansion-panel-content>
+                  </v-expansion-panel>
+                </v-expansion-panels>
+              </v-col>
+=======
            <object-bar></object-bar>
           </v-col>
 
@@ -78,6 +194,7 @@
                 class="d-flex justify-content-center mx-4 mt-4"
               ></v-sheet>
             </v-col>
+>>>>>>> f701e66dfc8b69cdfc1b7161e51feea5355c3795
             </v-sheet>
           </v-col>
         </v-row>
@@ -87,6 +204,13 @@
 </template>
 
 <script>
+<<<<<<< HEAD
+export default {
+  data: () => ({
+    links: ["Dashboard", "Messages", "Profile", "Updates"],
+  }),
+};
+=======
 import ObjectBar from './ObjectBar'
   export default {
     data: () => ({
@@ -102,4 +226,5 @@ import ObjectBar from './ObjectBar'
       'object-bar': ObjectBar,
     }
   }
+>>>>>>> f701e66dfc8b69cdfc1b7161e51feea5355c3795
 </script>
