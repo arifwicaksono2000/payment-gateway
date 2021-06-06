@@ -38,34 +38,7 @@
       <v-container>
         <v-row>
           <v-col cols="2">
-            <v-sheet rounded="lg">
-              <v-list color="transparent">
-                <v-list-item
-                  v-for="n in 1"
-                  :key="n"
-                  link
-                >
-                  <v-list-item-content>
-                    <v-list-item-title>
-                      List Item {{ n }}
-                    </v-list-item-title>
-                  </v-list-item-content>
-                </v-list-item>
-
-                <v-divider class="my-2"></v-divider>
-
-                <v-list-item
-                  link
-                  color="grey lighten-4"
-                >
-                  <v-list-item-content>
-                    <v-list-item-title>
-                      Refresh
-                    </v-list-item-title>
-                  </v-list-item-content>
-                </v-list-item>
-              </v-list>
-            </v-sheet>
+           <object-bar></object-bar>
           </v-col>
 
           <v-col>
@@ -83,7 +56,7 @@
               <v-btn
               color="primary"
               elevation="2"
-              bottom="true"
+              bottom
             ></v-btn>
               
               </v-sheet>
@@ -113,14 +86,19 @@
 </template>
 
 <script>
+import ObjectBar from './ObjectBar'
   export default {
     data: () => ({
       links: [
-        'Dashboard',
+        'Topan',
         'Messages',
         'Profile',
         'Updates',
       ],
     }),
+
+    components: {
+      'object-bar': ObjectBar,
+    }
   }
 </script>

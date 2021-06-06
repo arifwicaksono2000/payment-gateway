@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Transaction; //Lokasi Model
 
 class TransactionController extends Controller
 {
@@ -13,7 +14,7 @@ class TransactionController extends Controller
      */
     public function index()
     {
-        $transaction = \App\Transaction::get()->toJson(JSON_PRETTY_PRINT);
+        $transaction = Transaction::get()->toJson(JSON_PRETTY_PRINT);
         return response($transaction, 200);
     }
 
@@ -35,7 +36,15 @@ class TransactionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $transaction = new Transcation;
+        $user_db = new UserDb;
+
+        $user_db->
+
+        $pkt2s->Rate_Produksi_P1 = $request->Rate_Produksi_P1;
+        $pkt2s->Rate_Produksi_P2 = $request->Rate_Produksi_P2;
+        $pkt2s->Rate_Produksi_P3 = $request->Rate_Produksi_P3;
+        $pkt2s->Rate_Produksi_P4 = $request->Rate_Produksi_P4;
     }
 
     /**
