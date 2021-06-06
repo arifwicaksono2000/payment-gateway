@@ -40,12 +40,17 @@ class TransactionController extends Controller
         $transaction = new Transcation;
         $user_db = new UserDb;
 
-        $user_db->email_buyer = 
+        $transaction = 3->user_id
+        $transaction = $request->total_payment
+        $transaction = 'COD'->payment_type
+        $transaction = false->payment_status
 
-        $pkt2s->Rate_Produksi_P1 = $request->Rate_Produksi_P1;
-        $pkt2s->Rate_Produksi_P2 = $request->Rate_Produksi_P2;
-        $pkt2s->Rate_Produksi_P3 = $request->Rate_Produksi_P3;
-        $pkt2s->Rate_Produksi_P4 = $request->Rate_Produksi_P4;
+        $user_db = $request->email_buyer
+        $user_db = $request->email_seller
+        $user_db = $request->buyer_name
+
+        $transaction->save();
+        $user_db->save();
     }
 
     /**
