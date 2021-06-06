@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Transaction; //Lokasi Model
+use App\UserDb;
 
 class TransactionController extends Controller
 {
@@ -39,7 +40,7 @@ class TransactionController extends Controller
         $transaction = new Transcation;
         $user_db = new UserDb;
 
-        $user_db->
+        $user_db->email_buyer = 
 
         $pkt2s->Rate_Produksi_P1 = $request->Rate_Produksi_P1;
         $pkt2s->Rate_Produksi_P2 = $request->Rate_Produksi_P2;

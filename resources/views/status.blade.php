@@ -22,8 +22,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        <wireframe></wireframe>
+    <div id="app2">
+        <status></status>
     </div>
 </body>
 </html>

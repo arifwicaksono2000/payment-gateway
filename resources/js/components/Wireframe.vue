@@ -57,6 +57,7 @@
               color="primary"
               elevation="2"
               bottom
+              href="../../status"
             ></v-btn>
               
               </v-sheet>
