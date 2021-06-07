@@ -20,3 +20,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/user_db', 'UserDbController@index');
 Route::post('/transaction', 'TransactionController@store');
+
+// Integrasi ke Markopedia
+Route::post('/transaction/url', 'TransactionController@index');

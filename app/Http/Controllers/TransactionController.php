@@ -13,10 +13,15 @@ class TransactionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $transaction = Transaction::get()->toJson(JSON_PRETTY_PRINT);
-        return response($transaction, 200);
+        return response()->json([
+            'url1'=>'test1',
+            'url2'=>'test2'
+        ]);
+
+        // $transaction = Transaction::get()->toJson(JSON_PRETTY_PRINT);
+        // return response($transaction, 200);
     }
 
     /**
@@ -40,17 +45,17 @@ class TransactionController extends Controller
         $transaction = new Transcation;
         $user_db = new UserDb;
 
-        $transaction = 3->user_id
-        $transaction = $request->total_payment
-        $transaction = 'COD'->payment_type
-        $transaction = false->payment_status
+        // $transaction = 3->user_id;
+        // $transaction = $request->total_payment;
+        // $transaction = 'COD'->payment_type;
+        // $transaction = false->payment_status;
 
-        $user_db = $request->email_buyer
-        $user_db = $request->email_seller
-        $user_db = $request->buyer_name
+        // $user_db = $request->email_buyer;
+        // $user_db = $request->email_seller;
+        // $user_db = $request->buyer_name;
 
-        $transaction->save();
-        $user_db->save();
+        // $transaction->save();
+        // $user_db->save();
     }
 
     /**
