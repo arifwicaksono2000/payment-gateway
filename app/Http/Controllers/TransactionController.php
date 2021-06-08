@@ -15,9 +15,34 @@ class TransactionController extends Controller
      */
     public function index(Request $request)
     {
+        $transaction = new Transaction;
+        $user_db = new UserDb;
+
+        // // Get latest id from Transaction + 1
+        // $transaction_last_id = $transaction->latest('id')->first();
+        // $transaction_one_id = $transaction_last_id + 1;
+
+
+        // Get latest id from UserDb + 1
+        $user_db_last_id = $user_db->latest('id')->first();
+        $user_db_last_id_int = intval($user_db_last_id);
+        // $user_db_one_id = $user_db_last_id + 1;
+
+        $transaction->user_id = $user_db_last_id + 1;
+        $transaction->total_payment = $request->total_payment; // request
+        $transaction->payment_status = 'false';
+        // $transaction = $request->payment_type;
+
+        $user_db->email_buyer = $request->email_buyer; // request
+        $user_db->email_seller = $request->email_seller; // request
+        $user_db->buyer_name = $request->buyer_name; // request
+
+        $transaction->save();
+        $user_db->save();
+
         return response()->json([
-            'url1'=>'test1',
-            'url2'=>'test2'
+            'url1'=>'https://payment-gateway-iai.herokuapp.com/'+ $transaction->id,
+            'url2'=>'false'
         ]);
 
         // $transaction = Transaction::get()->toJson(JSON_PRETTY_PRINT);
@@ -42,20 +67,7 @@ class TransactionController extends Controller
      */
     public function store(Request $request)
     {
-        $transaction = new Transcation;
-        $user_db = new UserDb;
-
-        // $transaction = 3->user_id;
-        // $transaction = $request->total_payment;
-        // $transaction = 'COD'->payment_type;
-        // $transaction = false->payment_status;
-
-        // $user_db = $request->email_buyer;
-        // $user_db = $request->email_seller;
-        // $user_db = $request->buyer_name;
-
-        // $transaction->save();
-        // $user_db->save();
+        //
     }
 
     /**
@@ -103,3 +115,40 @@ class TransactionController extends Controller
         //
     }
 }
+
+/* THIS IS FOR REFERENCE */
+
+// public function index(Request $request)
+//     {
+//         $pkg2s = \App\Pkg2::whereMonth('created_at', $request->indexMonth)->whereYear('created_at', $request->indexYear)->orderBy('id', 'DESC')->get();
+//         return $pkg2s->toJson();
+//     }
+
+// public function store(Request $request)
+//     {
+//         $pkg2s = new Pkg2;
+//         $last_pkg = new Pkg2;
+//         $last_coating = $last_pkg->orderBy('id', 'desc')->first();
+//         // $timesVar1A = [2125/100];
+//         // $timesVar1B = [1725/100];
+//         // $pkg2s->Tanggal = $request->date("Y-m-d");
+        
+//         $pkg2s->RateProduksi_1A = $request->RateProduksi_1A;
+//         $pkg2s->RateProduksi_1B = $request->RateProduksi_1B;
+//         $pkg2s->Produksi_1A = $pkg2s->RateProduksi_1A*2125/100;
+//         $pkg2s->Produksi_1B = $pkg2s->RateProduksi_1B*1725/100;
+//         $pkg2s->TotalProduksi = $pkg2s->Produksi_1A + $pkg2s->Produksi_1B;
+//         $pkg2s->Output_Pengatongan_Sub = $request->Output_Pengatongan_Sub;
+//         $pkg2s->Output_Pengatongan_NonSub = $request->Output_Pengatongan_NonSub;
+//         $pkg2s->Output_BBNPK_Prill = $request->Output_BBNPK_Prill;
+//         $pkg2s->Output_ShippingOut_Sub = $request->Output_ShippingOut_Sub;
+//         $pkg2s->Output_ShippingOut_NonSub = $request->Output_ShippingOut_NonSub;       
+//         $pkg2s->BalanceStockCurah_Sub = $last_coating->BalanceStockCurah_Sub + $pkg2s->Produksi_1A - $pkg2s->Output_Pengatongan_Sub - $pkg2s->Output_BBNPK_Prill - $pkg2s->Output_ShippingOut_Sub;
+//         $pkg2s->BalanceStockCurah_NonSub = $last_coating->BalanceStockCurah_NonSub + $pkg2s->Produksi_1B - $pkg2s->Output_Pengatongan_NonSub - $pkg2s->Output_ShippingOut_NonSub;
+//         $pkg2s->BalanceStockCurah_Total = $pkg2s->BalanceStockCurah_Sub + $pkg2s->BalanceStockCurah_NonSub;
+        
+//         $pkg2s->save();
+//     }
+
+
+//Route::delete('/stock/{id}', 'StockController@destroy');

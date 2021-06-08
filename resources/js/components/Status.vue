@@ -12,6 +12,7 @@
               min-height="70vh"
               rounded="lg"
             >
+            <!-- isi disini pan invoicenya -->
             </v-sheet>
           </v-col>
         </v-row>
