@@ -16,7 +16,7 @@
 
           <v-col>
             <v-radio-group
-            v-model="Radios"
+            v-model="radios"
             >
             <v-sheet min-height="70vh" rounded="lg">
               <h2 class="font-weight-400 black--text px-2 pt-2 my-2">
@@ -39,12 +39,9 @@
                         Pembayaran akan dilakukan langsung kepada kurir setelah barang sampai pada anda.
                       </v-expansion-panel-content-text>
                       <v-col class="mt-4 pt-4">
-                        <v-radio
-                        value="cod"
-                        >
-                        </v-radio>
+                        <input type="radio" name="test_id" @change="onChange($event)" value="cod">
                         <!-- <v-btn
-                          class="white--text"
+                          class="white-text"
                           color="blue"
                           elevation="2"
                           absolute
@@ -76,12 +73,9 @@
                         Pembayaran menggunakan layanan E-Wallet Money Comes First
                       </v-expansion-panel-content-text>
                       <v-col class="mt-4 pt-4">
-                        <v-radio
-                        value="ewallet"
-                        >
-                        </v-radio>
+                        <input type="radio" name="test_id" @change="onChange($event)" value="ewallet">
                         <!-- <v-btn
-                          class="white--text"
+                          class="white-text"
                           color="blue"
                           elevation="2"
                           absolute
@@ -121,27 +115,23 @@
                         8. Simpan struk sebagai bukti pembayaran Anda.
                       </v-expansion-panel-content-text>
                       <v-col class="mt-4 pt-4">
-                        <v-radio
-                        value="virtualaccount"
-                        >
-                        </v-radio>
-                        <!-- <v-btn
-                          class="white--text"
-                          color="blue "
-                          elevation="2"
-                          absolute
-                          right
-                          bottom
-                          href="/status"
-                          @click="vaClicked"
-                        >
-                          Continue
-                        </v-btn> -->
+                        <input type="radio" name="test_id" @change="onChange($event)" value="va">
                       </v-col>
                     </v-expansion-panel-content>
                   </v-expansion-panel>
                 </v-expansion-panels>
               </v-col>
+              <v-btn
+                    class="white--text"
+                    color="blue "
+                    elevation="2"
+                    absolute
+                    right
+                    bottom
+                    @click="typeChosen"
+                  >
+                    Continue
+                  </v-btn>
             </v-sheet>
             </v-radio-group>
           </v-col>
@@ -154,6 +144,11 @@
 <script>
 import ObjectBar from './ObjectBar'
   export default {
+    data () {
+      return {
+        item:{dataSelected: ''},
+      }
+    },
     // props: [
     //   'buyerName',
     //   'idTr'
@@ -172,25 +167,22 @@ import ObjectBar from './ObjectBar'
     },
 
     methods: {
-      codClicked(){
-        let uriUser = 'api/user_db/user';
-        this.axios.get(uriUser).then(response => { 
+      typeChosen(){
+        let payment = this.item.dataSelected;
+        let selected = {payment};
+        console.log(selected);
+
+        let uriUser = 'api/transaction/type';
+        this.axios.post(uriUser, selected).then(response => {
+          window.open('/status')
+          // window.open('/status', '_blank') --> untuk new tab
       });
-
-      },
-
-      walletClicked(){
-        let uriUser = 'api/user_db/user';
-        this.axios.get(uriUser).then(response => { 
-      });
-      },
-
-      vaClicked(){
-        let uriUser = 'api/user_db/user';
-        this.axios.get(uriUser).then(response => { 
-      });
-      }
-
+    },
+    onChange(event){
+      var data = event.target.value;
+      this.item.dataSelected = data;
+      console.log(data);
+    }
 
   }  
 }

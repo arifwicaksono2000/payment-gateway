@@ -41,8 +41,8 @@ class TransactionController extends Controller
         $current_transaction->user_id = $user_db_last_id;
         $current_transaction->save();
 
-        // get latest buyer_name
-        $user_db_last_buyer = $user_db->orderBy('id', 'desc')->first()->buyer_name;
+        // // get latest buyer_name
+        // $user_db_last_buyer = $user_db->orderBy('id', 'desc')->first()->buyer_name;
 
 
         return response()->json([
@@ -84,9 +84,20 @@ class TransactionController extends Controller
         $transaction = new Transaction;
         $transaction_last = $transaction->orderBy('id', 'desc')->first();
 
-        $transaction_last_st = $transaction_last->payment_status
+        $transaction_type = $transaction_last->payment_type;
 
-        return $transaction_last->toJson();
+        if($transaction_type == "E-Wallet"){
+            return $transaction_last->toJson();
+        }
+        else{
+            // Update status to true
+            $transaction_last_id = $transaction_last->id;
+            $current_transaction = $transaction->find($transaction_last_id);
+            $current_transaction->payment_status = 'true';
+            $current_transaction->save();
+
+            return $transaction_last->toJson();
+        }
     }
 
     /**
@@ -95,9 +106,32 @@ class TransactionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function flip()
     {
-        //
+        $transaction = new Transaction;
+        $transaction_last = $transaction->orderBy('id', 'desc')->first();
+
+        $transaction_last_id = $transaction_last->id;
+        $current_transaction = $transaction->find($transaction_last_id);
+        $current_transaction->payment_status = 'true';
+        $current_transaction->save();
+
+        return $transaction_last->toJson();
+    }
+
+    public function type(Request $request)
+    {
+        $transaction = new Transaction;
+        $transaction_last = $transaction->orderBy('id', 'desc')->first();
+
+        // var_dump($request->payment);
+        
+        $transaction_last_id = $transaction_last->id;
+        $current_transaction = $transaction->find($transaction_last_id);
+        $current_transaction->payment_type = $request->payment;
+        $current_transaction->save();
+
+        return true;
     }
 
     /**

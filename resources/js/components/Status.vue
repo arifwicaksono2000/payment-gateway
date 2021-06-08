@@ -27,10 +27,11 @@
               <v-card-text class="grey lighten-4">
                 <v-sheet>
                 <div class="py-3">
-                  <p class="ml-10">Nama pembeli:</p>
-                  <p class="ml-10">Email pembeli:</p>
-                  <p class="ml-10">Harga barang:</p>
-                  <p class="ml-10">Status pembayaran:</p>
+                  <p class="ml-10">Nama pembeli: {{ itemsUser.buyer_name }}</p>
+                  <p class="ml-10">Email pembeli: {{ itemsUser.email_seller }}</p>
+                  <p class="ml-10">Harga barang: {{ itemsTrans.total_payment }}</p>
+                  <p class="ml-10">Jenis Pembayaran: {{ itemsTrans.payment_type }}</p>
+                  <p class="ml-10">Status pembayaran: {{ itemsTrans.payment_status }}</p>
                   </div>
                 </v-sheet>
               </v-card-text>
@@ -44,29 +45,69 @@
 </template>
 
 <script>
-import ObjectBar from "./ObjectBar";
 export default {
   data(){
     return {
-      items: []
+      itemsUser: [],
+      itemsTrans: [],
+      itemsWallet: []
     }
   },
-  components: {
-    "object-bar": ObjectBar,
-  },
+  // components: {
+  //   "object-bar": ObjectBar,
+  // },
 
-  created: {
-    
-  },
+  created() {
+    let uriUser = 'api/transaction/user';
+        this.axios.get(uriUser).then(response => { 
+          this.itemsUser = response.data;
+      });
 
-  methods:{
-    selectStatus(){
-      // var idPayment = 
-      let uri = '/api/transaction/status';
-        this.axios.get(uri).then((response) => {
-             this.items = response.data;                    
+    let uriTrans = 'api/transaction/transaction';
+      this.axios.get(uriTrans).then(response => { 
+        this.itemsTrans = response.data; 
+    });
+
+    let itemUsername = this.itemsUser.buyer_name;
+    let itemEBuy = this.itemsUser.email_seller;
+    let itemsTransPrice = this.itemsTrans.total_payment;
+    let itemsTransType = this.itemsTrans.payment_type;
+    // let itemsTransStatus = this.itemsTrans.payment_status;
+
+    if(itemsTransType == "E-Wallet"){
+      let info = {
+        itemUsername,
+        itemEBuy,
+        itemsTransPrice,
+      };
+
+      let config = {
+        headers: {
+          "Authorization": "Token 572b7fa2c5f29b42c89f51ceb8d54128a2e0e436",
+        }
+      };
+
+      let uriUser = 'mcf-iai.herokuapp.com/transactions/transfer';
+      this.axios.post(uriUser, info, config).then(response => { 
+        this.itemsWallet = response.data; 
+      });
+      if(this.itemsWallet.Success == true){
+        let uriFlip = 'api/transaction/flip';
+        this.axios.get(uriFlip).then(response => { 
+        this.itemsTrans = response.data; 
         });
-    }
+      }
+    };
+
   },
+
+  // methods:{
+  //   selectStatus(){
+  //     // var idPayment = 
+  //     let uriUser = 'api/user_db/user';
+  //       this.axios.get(uriUser).then(response => { 
+  //     });
+  //   }
+  // },
 };
 </script>
