@@ -46,7 +46,7 @@ class TransactionController extends Controller
 
 
         return response()->json([
-            'url1'=>'https://payment-gateway-iai.herokuapp.com/payment/'.$user_db_last_buyer.'/'.$transaction_last_id,
+            'url1'=>'https://payment-gateway-iai.herokuapp.com/payment/',
             'url2'=>'false'
         ]);
 
