@@ -95,8 +95,8 @@ export default {
       if(this.itemsWallet.Success == true){
         let uriFlip = 'api/transaction/flip';
         this.axios.get(uriFlip).then(response => { 
-        this.itemsTrans = response.data;
-        // this.$router.go();
+        this.itemsTrans = response.data
+        // this.$router.go()
         location.reload();
         });
       }

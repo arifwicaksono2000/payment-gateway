@@ -2112,7 +2112,7 @@ __webpack_require__.r(__webpack_exports__);
       if (this.itemsWallet.Success == true) {
         var uriFlip = 'api/transaction/flip';
         this.axios.get(uriFlip).then(function (response) {
-          _this.itemsTrans = response.data; // this.$router.go();
+          _this.itemsTrans = response.data; // this.$router.go()
 
           location.reload();
         });
