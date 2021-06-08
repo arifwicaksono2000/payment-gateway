@@ -23,8 +23,8 @@ Route::get('/user_db/transaction', 'UserDbController@trans');
 
 
 Route::post('/transaction', 'TransactionController@index');
-Route::get('/transaction/status', 'Transaction@status');
-Route::get('/transaction/ewallet', 'Transaction@ewallet');
+Route::post('/transaction/user', 'TransactionController@user');
+Route::post('/transaction/transaction', 'TransactionController@trans');
 
 // Integrasi ke Markopedia
 // Route::post('/transaction/url', 'TransactionController@index');

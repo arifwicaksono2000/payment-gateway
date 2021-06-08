@@ -2066,7 +2066,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2077,13 +2076,14 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     "object-bar": _ObjectBar__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
+  created: {},
   methods: {
     selectStatus: function selectStatus() {
       var _this = this;
 
       // var idPayment = 
       var uri = '/api/transaction/status';
-      this.axios.post(uri, selected).then(function (response) {
+      this.axios.get(uri).then(function (response) {
         _this.items = response.data;
       });
     }
@@ -40465,8 +40465,6 @@ var render = function() {
               _c(
                 "v-row",
                 [
-                  _c("v-col", { attrs: { cols: "2" } }, [_c("object-bar")], 1),
-                  _vm._v(" "),
                   _c(
                     "v-col",
                     [
@@ -40508,20 +40506,22 @@ var render = function() {
                             { staticClass: "grey lighten-4" },
                             [
                               _c("v-sheet", [
-                                _c("p", { staticClass: "ml-10" }, [
-                                  _vm._v("Nama pembeli:")
-                                ]),
-                                _vm._v(" "),
-                                _c("p", { staticClass: "ml-10" }, [
-                                  _vm._v("Email pembeli:")
-                                ]),
-                                _vm._v(" "),
-                                _c("p", { staticClass: "ml-10" }, [
-                                  _vm._v("Harga barang:")
-                                ]),
-                                _vm._v(" "),
-                                _c("p", { staticClass: "ml-10" }, [
-                                  _vm._v("Status pembayaran:")
+                                _c("div", { staticClass: "py-3" }, [
+                                  _c("p", { staticClass: "ml-10" }, [
+                                    _vm._v("Nama pembeli:")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("p", { staticClass: "ml-10" }, [
+                                    _vm._v("Email pembeli:")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("p", { staticClass: "ml-10" }, [
+                                    _vm._v("Harga barang:")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("p", { staticClass: "ml-10" }, [
+                                    _vm._v("Status pembayaran:")
+                                  ])
                                 ])
                               ])
                             ],

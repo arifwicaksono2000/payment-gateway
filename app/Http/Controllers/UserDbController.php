@@ -41,7 +41,6 @@ class UserDbController extends Controller
     public function trans()
     {
         $transaction = new Transaction;
-        // $transaction_last = $transaction->latest('id')->first();
         $transaction_last = $transaction->orderBy('id', 'desc')->first();
 
         return $transaction_last->toJson();

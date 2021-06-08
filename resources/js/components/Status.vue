@@ -10,9 +10,6 @@
     <v-main class="grey lighten-3">
       <v-container>
         <v-row>
-          <v-col cols="2">
-            <object-bar></object-bar>
-          </v-col>
           <v-col>
             <!-- <v-sheet min-height="70vh" rounded="lg"> -->
             <!-- isi disini pan invoicenya -->
@@ -29,10 +26,12 @@
               </v-banner>
               <v-card-text class="grey lighten-4">
                 <v-sheet>
+                <div class="py-3">
                   <p class="ml-10">Nama pembeli:</p>
                   <p class="ml-10">Email pembeli:</p>
                   <p class="ml-10">Harga barang:</p>
                   <p class="ml-10">Status pembayaran:</p>
+                  </div>
                 </v-sheet>
               </v-card-text>
             </v-card>
@@ -56,11 +55,15 @@ export default {
     "object-bar": ObjectBar,
   },
 
+  created: {
+    
+  },
+
   methods:{
     selectStatus(){
       // var idPayment = 
       let uri = '/api/transaction/status';
-        this.axios.post(uri, selected).then((response) => {
+        this.axios.get(uri).then((response) => {
              this.items = response.data;                    
         });
     }

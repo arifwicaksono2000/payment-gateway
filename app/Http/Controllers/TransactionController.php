@@ -60,25 +60,17 @@ class TransactionController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function status(Request $request)
-    {
-        $status = Transaction::find($request)->get();
-        return $status->toJson();
-    }
-
-    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function user()
     {
-        //
+        $user_db = new UserDb;
+        $user_db_last = $user_db->orderBy('id', 'desc')->first();
+
+        return $user_db_last->toJson();
     }
 
     /**
@@ -87,9 +79,14 @@ class TransactionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function trans()
     {
-        //
+        $transaction = new Transaction;
+        $transaction_last = $transaction->orderBy('id', 'desc')->first();
+
+        $transaction_last_st = $transaction_last->payment_status
+
+        return $transaction_last->toJson();
     }
 
     /**
