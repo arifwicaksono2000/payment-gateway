@@ -16,44 +16,44 @@ class TransactionController extends Controller
     public function index(Request $request)
     {
         $transaction = new Transaction;
-        // $transaction_payment = Transaction::select('total_payment')->where('id', 1)->get();
-        $transaction_last = $transaction->orderBy('id', 'desc')->first()->id;
-        //$transaction_last_id = $transaction_last->id;
-        // $user_db = new UserDb;
+        $user_db = new UserDb;
+
+        // $transaction_last = $transaction->orderBy('id', 'desc')->first()->id;
+        // $intstr = strval($transaction_last);
         
-        // $transaction->total_payment = $request->total_payment; // request
-        // $transaction->payment_status = 'false';
+        $transaction->total_payment = $request->total_payment; // request
+        $transaction->payment_status = 'false';
 
-        // $user_db->email_buyer = $request->email_buyer; // request
-        // $user_db->email_seller = $request->email_seller; // request
-        // $user_db->buyer_name = $request->buyer_name; // request
+        $user_db->email_buyer = $request->email_buyer; // request
+        $user_db->email_seller = $request->email_seller; // request
+        $user_db->buyer_name = $request->buyer_name; // request
 
-        // $transaction->save();
-        // $user_db->save();
-
-
-        // // get latest id from tables
-        // $user_db_last_id = $user_db->orderBy('id', 'desc')->first()->id;
-        // $transaction_last_id = $transaction->orderBy('id', 'desc')->first()->id;
-
-        // // update user_db in latest row of table transaction
-        // $current_transaction = $transaction->find($transaction_last_id);
-        // $current_transaction->user_id = $user_db_last_id;
-        // $current_transaction->save();
-
-        // // get latest buyer_name
-        // $user_db_last_buyer = $user_db->orderBy('id', 'desc')->first()->buyer_name;
+        $transaction->save();
+        $user_db->save();
 
 
-        // return response()->json([
-        //     'url1'=>'https://payment-gateway-iai.herokuapp.com/payment/' + $transaction_last_id + $user_db_last_buyer,
-        //     'url2'=>'false'
-        // ]);
+        // get latest id from tables
+        $user_db_last_id = $user_db->orderBy('id', 'desc')->first()->id;
+        $transaction_last_id = $transaction->orderBy('id', 'desc')->first()->id;
+
+        // update user_db in latest row of table transaction
+        $current_transaction = $transaction->find($transaction_last_id);
+        $current_transaction->user_id = $user_db_last_id;
+        $current_transaction->save();
+
+        // get latest buyer_name
+        $user_db_last_buyer = $user_db->orderBy('id', 'desc')->first()->buyer_name;
+
 
         return response()->json([
-            'url1'=>'https://payment-gateway-iai.herokuapp.com/payment/',
-            'url2'=> $transaction_last
+            'url1'=>'https://payment-gateway-iai.herokuapp.com/payment/'.$transaction_last_id.$user_db_last_buyer,
+            'url2'=>'false'
         ]);
+
+        // return response()->json([
+        //     'url1'=>'https://payment-gateway-iai.herokuapp.com/payment/'.$intstr,
+        //     'url2'=> $transaction_last
+        // ]);
 
         // $transaction = Transaction::get()->toJson(JSON_PRETTY_PRINT);
         // return response($transaction, 200);
@@ -163,3 +163,7 @@ class TransactionController extends Controller
 
 
 //Route::delete('/stock/{id}', 'StockController@destroy');
+
+// $transaction_payment = Transaction::select('total_payment')->where('id', 1)->get();
+// $transaction_last = $transaction->orderBy('id', 'desc')->first()->id;
+// $transaction_last_id = $transaction_last->id;
