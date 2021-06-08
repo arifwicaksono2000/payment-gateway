@@ -2113,8 +2113,9 @@ __webpack_require__.r(__webpack_exports__);
         var uriFlip = 'api/transaction/flip';
         this.axios.get(uriFlip).then(function (response) {
           _this.itemsTrans = response.data; // this.$router.go()
+          // location.reload();
 
-          location.reload();
+          window.location.reload();
         });
       }
     }

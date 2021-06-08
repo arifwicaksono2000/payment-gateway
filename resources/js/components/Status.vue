@@ -97,7 +97,8 @@ export default {
         this.axios.get(uriFlip).then(response => { 
         this.itemsTrans = response.data
         // this.$router.go()
-        location.reload();
+        // location.reload();
+        window.location.reload()
         });
       }
 
