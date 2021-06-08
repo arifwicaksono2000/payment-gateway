@@ -51,7 +51,7 @@ export default {
     return {
       items: []
     }
-  }
+  },
   components: {
     "object-bar": ObjectBar,
   },

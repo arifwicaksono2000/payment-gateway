@@ -25,11 +25,8 @@ Route::get('/test', function () {
     return view('welcome');
 });
 
-Route::get('/payment/{buyer_name}/{total_payment}', function ($buyerName, $totalPayment) {
-    return view('index',[
-        'total_payment'=>$totalPayment,
-        'buyer_name'=>$buyerName
-        ]);
+Route::get('/payment/{buyer_name}/{tr_id}', function ($buyerName, $idTr) {
+    return view('index')->with('buyer_name',$buyerName)->with('tr_id',$idTr);
 });
 
 Auth::routes();

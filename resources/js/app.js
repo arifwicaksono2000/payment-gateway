@@ -4,10 +4,16 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 import Vuetify from '../plugins/vuetify'
+import Vue from 'vue'
 
 require('./bootstrap');
 
+// Plugin untuk CRUD method
+import VueAxios from 'vue-axios'; 
+import axios from 'axios';
+
 window.Vue = require('vue');
+Vue.use(VueAxios, axios);
 
 /**
  * The following block of code may be used to automatically register your
