@@ -1987,6 +1987,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -1995,42 +1996,6 @@ __webpack_require__.r(__webpack_exports__);
 /*!************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vuetify-loader/lib/loader.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Status.vue?vue&type=script&lang=js& ***!
   \************************************************************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Wireframe.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vuetify-loader/lib/loader.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Wireframe.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2083,109 +2048,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      links: ['Topan', 'Messages', 'Profile', 'Updates']
-    };
-  },
   components: {
-    'object-bar': _ObjectBar__WEBPACK_IMPORTED_MODULE_0__["default"]
-  },
-  methods: {
-    next: function next() {}
+    "object-bar": _ObjectBar__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
 });
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Wireframe.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vuetify-loader/lib/loader.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Wireframe.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: E:\\IAI\\payment-gateway\\resources\\js\\components\\Wireframe.vue: Unexpected token (149:0)\n\n\u001b[0m \u001b[90m 147 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 148 |\u001b[39m     components\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 149 |\u001b[39m \u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<\u001b[39m \u001b[33mHEAD\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 150 |\u001b[39m       \u001b[32m'object-bar'\u001b[39m\u001b[33m:\u001b[39m \u001b[33mObjectBar\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 151 |\u001b[39m     }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 152 |\u001b[39m\u001b[0m\n    at Parser._raise (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:810:17)\n    at Parser.raiseWithData (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:803:17)\n    at Parser.raise (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:764:17)\n    at Parser.unexpected (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:9980:16)\n    at Parser.parseIdentifierName (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:12191:18)\n    at Parser.parseIdentifier (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:12164:23)\n    at Parser.parseMaybePrivateName (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11453:19)\n    at Parser.parsePropertyName (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11978:151)\n    at Parser.parsePropertyDefinition (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11863:22)\n    at Parser.parseObjectLike (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11778:25)\n    at Parser.parseExprAtom (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11298:23)\n    at Parser.parseExprSubscripts (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10954:23)\n    at Parser.parseUpdate (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10934:21)\n    at Parser.parseMaybeUnary (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10912:23)\n    at Parser.parseExprOps (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10769:23)\n    at Parser.parseMaybeConditional (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10743:23)\n    at Parser.parseMaybeAssign (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10706:21)\n    at E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10673:39\n    at Parser.allowInAnd (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:12396:12)\n    at Parser.parseMaybeAssignAllowIn (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10673:17)\n    at Parser.parseObjectProperty (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11939:101)\n    at Parser.parseObjPropValue (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11964:100)\n    at Parser.parsePropertyDefinition (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11888:10)\n    at Parser.parseObjectLike (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11778:25)\n    at Parser.parseExprAtom (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11298:23)\n    at Parser.parseExprSubscripts (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10954:23)\n    at Parser.parseUpdate (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10934:21)\n    at Parser.parseMaybeUnary (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10912:23)\n    at Parser.parseExprOps (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10769:23)\n    at Parser.parseMaybeConditional (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10743:23)\n    at Parser.parseMaybeAssign (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10706:21)\n    at E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10673:39\n    at Parser.allowInAnd (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:12390:16)\n    at Parser.parseMaybeAssignAllowIn (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10673:17)\n    at Parser.parseExportDefaultExpression (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:13808:24)\n    at Parser.parseExport (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:13718:31)");
 
 /***/ }),
 
@@ -40328,6 +40207,24 @@ var render = function() {
     { attrs: { id: "inspire" } },
     [
       _c(
+        "v-app-bar",
+        { attrs: { app: "", color: "white", flat: "" } },
+        [
+          _c(
+            "v-container",
+            { staticClass: "py-0 fill-height" },
+            [
+              _c("v-toolbar-title", [
+                _c("h3", [_vm._v("Payment Gateway Markopedia")])
+              ])
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
         "v-main",
         { staticClass: "grey lighten-3" },
         [
@@ -40342,9 +40239,66 @@ var render = function() {
                   _c(
                     "v-col",
                     [
-                      _c("v-sheet", {
-                        attrs: { "min-height": "70vh", rounded: "lg" }
-                      })
+                      _c(
+                        "v-card",
+                        [
+                          _c(
+                            "v-toolbar",
+                            { attrs: { flat: "", color: "primary" } },
+                            [
+                              _c("v-toolbar-title", [
+                                _c("h3", { staticClass: "white--text" }, [
+                                  _vm._v("Invoice")
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("v-spacer"),
+                              _vm._v(" "),
+                              _c("div")
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c("v-banner", {
+                            attrs: { "single-line": "", sticky: _vm.sticky },
+                            scopedSlots: _vm._u([
+                              {
+                                key: "actions",
+                                fn: function() {
+                                  return undefined
+                                },
+                                proxy: true
+                              }
+                            ])
+                          }),
+                          _vm._v(" "),
+                          _c(
+                            "v-card-text",
+                            { staticClass: "grey lighten-4" },
+                            [
+                              _c("v-sheet", [
+                                _c("p", { staticClass: "ml-10" }, [
+                                  _vm._v("Nama pembeli:")
+                                ]),
+                                _vm._v(" "),
+                                _c("p", { staticClass: "ml-10" }, [
+                                  _vm._v("Email pembeli:")
+                                ]),
+                                _vm._v(" "),
+                                _c("p", { staticClass: "ml-10" }, [
+                                  _vm._v("Harga barang:")
+                                ]),
+                                _vm._v(" "),
+                                _c("p", { staticClass: "ml-10" }, [
+                                  _vm._v("Status pembayaran:")
+                                ])
+                              ])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
                     ],
                     1
                   )
@@ -40396,7 +40350,7 @@ var render = function() {
             { staticClass: "py-0 fill-height" },
             [
               _c("v-toolbar-title", [
-                _vm._v("\n        Payment Gateway Markopedia\n      ")
+                _c("h3", [_vm._v("Payment Gateway Markopedia")])
               ])
             ],
             1
@@ -97405,9 +97359,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vuetify-loader/lib/runtime/installComponents.js */ "./node_modules/vuetify-loader/lib/runtime/installComponents.js");
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuetify/lib/components/VApp */ "./node_modules/vuetify/lib/components/VApp/index.js");
-/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
-/* harmony import */ var vuetify_lib_components_VMain__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VMain */ "./node_modules/vuetify/lib/components/VMain/index.js");
-/* harmony import */ var vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VSheet */ "./node_modules/vuetify/lib/components/VSheet/index.js");
+/* harmony import */ var vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VAppBar */ "./node_modules/vuetify/lib/components/VAppBar/index.js");
+/* harmony import */ var vuetify_lib_components_VBanner__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VBanner */ "./node_modules/vuetify/lib/components/VBanner/index.js");
+/* harmony import */ var vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VCard */ "./node_modules/vuetify/lib/components/VCard/index.js");
+/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
+/* harmony import */ var vuetify_lib_components_VMain__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VMain */ "./node_modules/vuetify/lib/components/VMain/index.js");
+/* harmony import */ var vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VSheet */ "./node_modules/vuetify/lib/components/VSheet/index.js");
+/* harmony import */ var vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vuetify/lib/components/VToolbar */ "./node_modules/vuetify/lib/components/VToolbar/index.js");
 
 
 
@@ -97434,7 +97392,14 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VApp: vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_4__["VApp"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_5__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_5__["VContainer"],VMain: vuetify_lib_components_VMain__WEBPACK_IMPORTED_MODULE_6__["VMain"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_5__["VRow"],VSheet: vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_7__["VSheet"]})
+
+
+
+
+
+
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VApp: vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_4__["VApp"],VAppBar: vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_5__["VAppBar"],VBanner: vuetify_lib_components_VBanner__WEBPACK_IMPORTED_MODULE_6__["VBanner"],VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_7__["VCard"],VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_7__["VCardText"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VContainer"],VMain: vuetify_lib_components_VMain__WEBPACK_IMPORTED_MODULE_9__["VMain"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VRow"],VSheet: vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_10__["VSheet"],VSpacer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VSpacer"],VToolbar: vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_11__["VToolbar"],VToolbarTitle: vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_11__["VToolbarTitle"]})
 
 
 /* hot reload */
