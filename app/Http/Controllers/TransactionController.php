@@ -17,21 +17,9 @@ class TransactionController extends Controller
     {
         $transaction = new Transaction;
         $user_db = new UserDb;
-
-        // // Get latest id from Transaction + 1
-        // $transaction_last_id = $transaction->latest('id')->first();
-        // $transaction_one_id = $transaction_last_id + 1;
-
-
-        // Get latest id from UserDb + 1
-        $user_db_last_id = $user_db->latest('id')->first();
-        $user_db_last_id_int = intval($user_db_last_id);
-        // $user_db_one_id = $user_db_last_id + 1;
-
-        $transaction->user_id = $user_db_last_id + 1;
+        
         $transaction->total_payment = $request->total_payment; // request
         $transaction->payment_status = 'false';
-        // $transaction = $request->payment_type;
 
         $user_db->email_buyer = $request->email_buyer; // request
         $user_db->email_seller = $request->email_seller; // request
@@ -40,8 +28,22 @@ class TransactionController extends Controller
         $transaction->save();
         $user_db->save();
 
+
+        // get latest id from tables
+        $user_db_last_id = $user_db->latest('id')->first();
+        $transaction_last_id = $transaction->latest('id')->first();
+
+        // update user_db in latest row of table transaction
+        $current_transaction = $transaction->find($transaction_last_id)
+        $current_transaction->user_id = $user_db_last_id
+        $current_transaction->save()
+
+        // get latest buyer_name
+        $user_db_last_buyer = $user_db->latest('buyer_name')->first();
+
+
         return response()->json([
-            'url1'=>'https://payment-gateway-iai.herokuapp.com/'+ $transaction->id,
+            'url1'=>'https://payment-gateway-iai.herokuapp.com/payment/' + $transaction_last_id + $user_db_last_buyer,
             'url2'=>'false'
         ]);
 

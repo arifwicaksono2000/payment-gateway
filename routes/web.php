@@ -25,6 +25,13 @@ Route::get('/test', function () {
     return view('welcome');
 });
 
+Route::get('/payment/{id}/{buyer_name}', function ($id,$buyerName) {
+    return view('index',[
+        'id'=>$id,
+        'buyerName'=>$buyerName
+        ]);
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
