@@ -3,11 +3,11 @@
     <v-app-bar app color="white" flat>
       <v-container class="py-0 fill-height">
         <v-toolbar-title>
-          Payment Gateway Markopedia
+          <h3>Payment Gateway Markopedia</h3> 
         </v-toolbar-title>
       </v-container>
     </v-app-bar>
-
+    <!-- <header></header> -->
     <v-main class="grey lighten-3">
       <v-container>
         <v-row>
@@ -32,12 +32,12 @@
                         <v-icon color="white"> $expand </v-icon>
                       </template>
                     </v-expansion-panel-header>
-                    <v-expansion-panel-content class="pt-2 grey--text">
+                    <v-expansion-panel-content class="pt-2 font-weight-bold grey--text">
                       <v-expansion-panel-content-text class="mb-2">
                         Pembayaran akan dilakukan langsung kepada kurir setelah barang sampai pada anda.
                       </v-expansion-panel-content-text>
                       <v-col class="mt-4 pt-4">
-                        <v-btn
+                        <v-btn v-on:click="next"
                           class="white--text"
                           color="blue"
                           elevation="2"
@@ -64,18 +64,19 @@
                         <v-icon color="white"> $expand </v-icon>
                       </template>
                     </v-expansion-panel-header>
-                    <v-expansion-panel-content class="pt-2 grey--text">
+                    <v-expansion-panel-content class="pt-2 font-weight-bold grey--text">
                       <v-expansion-panel-content-text class="mb-2">
                         Pembayaran menggunakan layanan E-Wallet Money Comes First
                       </v-expansion-panel-content-text>
                       <v-col class="mt-4 pt-4">
-                        <v-btn
+                        <v-btn v-on:click="next"
                           class="white--text"
                           color="blue"
                           elevation="2"
                           absolute
                           right
                           bottom
+                          href="/status"
                         >
                           Continue
                         </v-btn>
@@ -95,7 +96,7 @@
                         <v-icon color="white"> $expand </v-icon>
                       </template>
                     </v-expansion-panel-header>
-                    <v-expansion-panel-content class="pt-2 grey--text">
+                    <v-expansion-panel-content class="pt-2 font-weight-bold grey--text">
                       <v-expansion-panel-content-text class="mb-2">
                         Pembayaran dapat dilakukan dengan menggunakan Virtual Account dengan mengikuti langkah - langkah berikut:<br>
                         1. Masukkan kartu ATM dan Pin.<br> 
@@ -108,13 +109,14 @@
                         8. Simpan struk sebagai bukti pembayaran Anda.
                       </v-expansion-panel-content-text>
                       <v-col class="mt-4 pt-4">
-                        <v-btn
+                        <v-btn v-on:click="next"
                           class="white--text"
                           color="blue "
                           elevation="2"
                           absolute
                           right
                           bottom
+                          href="/status"
                         >
                           Continue
                         </v-btn>
@@ -134,17 +136,25 @@
 <script>
 import ObjectBar from './ObjectBar'
   export default {
-    data: () => ({
-      links: [
-        'Topan',
-        'Messages',
-        'Profile',
-        'Updates',
-      ],
-    }),
+    // data: () => ({
+    //   links: [
+    //     'Topan',
+    //     'Messages',
+    //     'Profile',
+    //     'Updates',
+    //   ],
+    // }),
 
     components: {
-      'object-bar': ObjectBar,
+      'object-bar': ObjectBar
     }
   }
+  
+  // import header from './Header'
+  // export default {
+  //   components: {
+  //     'header': header
+  //   }
+  // }
+  
 </script>
