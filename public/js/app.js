@@ -2022,6 +2022,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2169,6 +2170,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2178,6 +2181,9 @@ __webpack_require__.r(__webpack_exports__);
   },
   components: {
     'object-bar': _ObjectBar__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  methods: {
+    next: function next() {}
   }
 });
 
@@ -40483,7 +40489,10 @@ var render = function() {
                                       _vm._v(" "),
                                       _c(
                                         "v-expansion-panel-content",
-                                        { staticClass: "pt-2 grey--text" },
+                                        {
+                                          staticClass:
+                                            "pt-2 font-weight-bold grey--text"
+                                        },
                                         [
                                           _c(
                                             "v-expansion-panel-content-text",
@@ -40510,7 +40519,8 @@ var render = function() {
                                                     right: "",
                                                     bottom: "",
                                                     href: "/status"
-                                                  }
+                                                  },
+                                                  on: { click: _vm.next }
                                                 },
                                                 [
                                                   _vm._v(
@@ -40584,7 +40594,10 @@ var render = function() {
                                       _vm._v(" "),
                                       _c(
                                         "v-expansion-panel-content",
-                                        { staticClass: "pt-2 grey--text" },
+                                        {
+                                          staticClass:
+                                            "pt-2 font-weight-bold grey--text"
+                                        },
                                         [
                                           _c(
                                             "v-expansion-panel-content-text",
@@ -40609,8 +40622,10 @@ var render = function() {
                                                     elevation: "2",
                                                     absolute: "",
                                                     right: "",
-                                                    bottom: ""
-                                                  }
+                                                    bottom: "",
+                                                    href: "/status"
+                                                  },
+                                                  on: { click: _vm.next }
                                                 },
                                                 [
                                                   _vm._v(
@@ -40684,7 +40699,10 @@ var render = function() {
                                       _vm._v(" "),
                                       _c(
                                         "v-expansion-panel-content",
-                                        { staticClass: "pt-2 grey--text" },
+                                        {
+                                          staticClass:
+                                            "pt-2 font-weight-bold grey--text"
+                                        },
                                         [
                                           _c(
                                             "v-expansion-panel-content-text",
@@ -40741,8 +40759,10 @@ var render = function() {
                                                     elevation: "2",
                                                     absolute: "",
                                                     right: "",
-                                                    bottom: ""
-                                                  }
+                                                    bottom: "",
+                                                    href: "/status"
+                                                  },
+                                                  on: { click: _vm.next }
                                                 },
                                                 [
                                                   _vm._v(
@@ -97595,8 +97615,8 @@ var opts = {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\User\Documents\Personal Documents\Kuliah\Akademik\Semester 6\Mata Kuliah\3. Integrasi Aplikasi dan Informasi\Project IAI\payment-gateway\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\User\Documents\Personal Documents\Kuliah\Akademik\Semester 6\Mata Kuliah\3. Integrasi Aplikasi dan Informasi\Project IAI\payment-gateway\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! E:\IAI\payment-gateway\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! E:\IAI\payment-gateway\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
