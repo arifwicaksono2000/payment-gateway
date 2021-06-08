@@ -3,11 +3,11 @@
     <v-app-bar app color="white" flat>
       <v-container class="py-0 fill-height">
         <v-toolbar-title>
-          Payment Gateway Markopedia
+          <h3>Payment Gateway Markopedia</h3> 
         </v-toolbar-title>
       </v-container>
     </v-app-bar>
-
+    <!-- <header></header> -->
     <v-main class="grey lighten-3">
       <v-container>
         <v-row>
@@ -134,17 +134,25 @@
 <script>
 import ObjectBar from './ObjectBar'
   export default {
-    data: () => ({
-      links: [
-        'Topan',
-        'Messages',
-        'Profile',
-        'Updates',
-      ],
-    }),
+    // data: () => ({
+    //   links: [
+    //     'Topan',
+    //     'Messages',
+    //     'Profile',
+    //     'Updates',
+    //   ],
+    // }),
 
     components: {
-      'object-bar': ObjectBar,
+      'object-bar': ObjectBar
     }
   }
+  
+  // import header from './Header'
+  // export default {
+  //   components: {
+  //     'header': header
+  //   }
+  // }
+  
 </script>
