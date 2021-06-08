@@ -34,9 +34,9 @@ class TransactionController extends Controller
         $transaction_last_id = $transaction->latest('id')->first();
 
         // update user_db in latest row of table transaction
-        $current_transaction = $transaction->find($transaction_last_id)
-        $current_transaction->user_id = $user_db_last_id
-        $current_transaction->save()
+        $current_transaction = $transaction->find($transaction_last_id);
+        $current_transaction->user_id = $user_db_last_id;
+        $current_transaction->save();
 
         // get latest buyer_name
         $user_db_last_buyer = $user_db->latest('buyer_name')->first();
