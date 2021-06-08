@@ -7,7 +7,6 @@
         </v-toolbar-title>
       </v-container>
     </v-app-bar>
-    <!-- <header></header> -->
     <v-main class="grey lighten-3">
       <v-container>
         <v-row>
@@ -16,6 +15,9 @@
           </v-col>
 
           <v-col>
+            <v-radio-group
+            v-model="Radios"
+            >
             <v-sheet min-height="70vh" rounded="lg">
               <h2 class="font-weight-400 black--text px-2 pt-2 my-2">
                 Payment Options
@@ -37,7 +39,11 @@
                         Pembayaran akan dilakukan langsung kepada kurir setelah barang sampai pada anda.
                       </v-expansion-panel-content-text>
                       <v-col class="mt-4 pt-4">
-                        <v-btn v-on:click="next"
+                        <v-radio
+                        value="cod"
+                        >
+                        </v-radio>
+                        <!-- <v-btn
                           class="white--text"
                           color="blue"
                           elevation="2"
@@ -47,7 +53,7 @@
                           href="/status"
                         >
                           Continue
-                        </v-btn>
+                        </v-btn> -->
                       </v-col>
                     </v-expansion-panel-content>
                   </v-expansion-panel>
@@ -69,7 +75,11 @@
                         Pembayaran menggunakan layanan E-Wallet Money Comes First
                       </v-expansion-panel-content-text>
                       <v-col class="mt-4 pt-4">
-                        <v-btn v-on:click="next"
+                        <v-radio
+                        value="ewallet"
+                        >
+                        </v-radio>
+                        <!-- <v-btn
                           class="white--text"
                           color="blue"
                           elevation="2"
@@ -79,7 +89,7 @@
                           href="/status"
                         >
                           Continue
-                        </v-btn>
+                        </v-btn> -->
                       </v-col>
                     </v-expansion-panel-content>
                   </v-expansion-panel>
@@ -109,7 +119,11 @@
                         8. Simpan struk sebagai bukti pembayaran Anda.
                       </v-expansion-panel-content-text>
                       <v-col class="mt-4 pt-4">
-                        <v-btn v-on:click="next"
+                        <v-radio
+                        value="virtualaccount"
+                        >
+                        </v-radio>
+                        <!-- <v-btn
                           class="white--text"
                           color="blue "
                           elevation="2"
@@ -119,13 +133,14 @@
                           href="/status"
                         >
                           Continue
-                        </v-btn>
+                        </v-btn> -->
                       </v-col>
                     </v-expansion-panel-content>
                   </v-expansion-panel>
                 </v-expansion-panels>
               </v-col>
             </v-sheet>
+            </v-radio-group>
           </v-col>
         </v-row>
       </v-container>
