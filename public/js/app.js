@@ -2062,9 +2062,165 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vuetify-loader/lib/loader.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Wireframe.vue?vue&type=script&lang=js& ***!
   \***************************************************************************************************************************************************************************************************************************/
 /*! exports provided: default */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: E:\\IAI\\payment-gateway\\resources\\js\\components\\Wireframe.vue: Unexpected token (149:0)\n\n\u001b[0m \u001b[90m 147 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 148 |\u001b[39m     components\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 149 |\u001b[39m \u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<\u001b[39m \u001b[33mHEAD\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 150 |\u001b[39m       \u001b[32m'object-bar'\u001b[39m\u001b[33m:\u001b[39m \u001b[33mObjectBar\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 151 |\u001b[39m     }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 152 |\u001b[39m\u001b[0m\n    at Parser._raise (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:810:17)\n    at Parser.raiseWithData (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:803:17)\n    at Parser.raise (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:764:17)\n    at Parser.unexpected (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:9980:16)\n    at Parser.parseIdentifierName (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:12191:18)\n    at Parser.parseIdentifier (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:12164:23)\n    at Parser.parseMaybePrivateName (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11453:19)\n    at Parser.parsePropertyName (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11978:151)\n    at Parser.parsePropertyDefinition (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11863:22)\n    at Parser.parseObjectLike (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11778:25)\n    at Parser.parseExprAtom (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11298:23)\n    at Parser.parseExprSubscripts (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10954:23)\n    at Parser.parseUpdate (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10934:21)\n    at Parser.parseMaybeUnary (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10912:23)\n    at Parser.parseExprOps (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10769:23)\n    at Parser.parseMaybeConditional (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10743:23)\n    at Parser.parseMaybeAssign (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10706:21)\n    at E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10673:39\n    at Parser.allowInAnd (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:12396:12)\n    at Parser.parseMaybeAssignAllowIn (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10673:17)\n    at Parser.parseObjectProperty (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11939:101)\n    at Parser.parseObjPropValue (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11964:100)\n    at Parser.parsePropertyDefinition (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11888:10)\n    at Parser.parseObjectLike (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11778:25)\n    at Parser.parseExprAtom (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:11298:23)\n    at Parser.parseExprSubscripts (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10954:23)\n    at Parser.parseUpdate (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10934:21)\n    at Parser.parseMaybeUnary (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10912:23)\n    at Parser.parseExprOps (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10769:23)\n    at Parser.parseMaybeConditional (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10743:23)\n    at Parser.parseMaybeAssign (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10706:21)\n    at E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10673:39\n    at Parser.allowInAnd (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:12390:16)\n    at Parser.parseMaybeAssignAllowIn (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:10673:17)\n    at Parser.parseExportDefaultExpression (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:13808:24)\n    at Parser.parseExport (E:\\IAI\\payment-gateway\\node_modules\\@babel\\parser\\lib\\index.js:13718:31)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ObjectBar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ObjectBar */ "./resources/js/components/ObjectBar.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  // data: () => ({
+  //   links: [
+  //     'Topan',
+  //     'Messages',
+  //     'Profile',
+  //     'Updates',
+  //   ],
+  // }),
+  components: {
+    'object-bar': _ObjectBar__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
+}); // import header from './Header'
+// export default {
+//   components: {
+//     'header': header
+//   }
+// }
 
 /***/ }),
 
@@ -97580,8 +97736,8 @@ var opts = {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\IAI\payment-gateway\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! E:\IAI\payment-gateway\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! E:\Kuliah\IAI\payment-gateway\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! E:\Kuliah\IAI\payment-gateway\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

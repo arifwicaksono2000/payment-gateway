@@ -146,17 +146,7 @@ import ObjectBar from './ObjectBar'
     // }),
 
     components: {
-<<<<<<< HEAD
-      'object-bar': ObjectBar,
-    },
-
-    methods:{
-      next(){
-        
-      }
-=======
       'object-bar': ObjectBar
->>>>>>> 1bcc6af8d326cc4e0e3de8cea9aa2b6889a78c30
     }
   }
   
