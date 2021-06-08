@@ -2089,14 +2089,14 @@ __webpack_require__.r(__webpack_exports__);
       _this.itemsTrans = response.data;
     });
     var itemUsername = this.itemsUser.buyer_name;
-    var itemEBuy = this.itemsUser.email_seller;
+    var itemESel = this.itemsUser.email_seller;
     var itemsTransPrice = this.itemsTrans.total_payment;
     var itemsTransType = this.itemsTrans.payment_type; // let itemsTransStatus = this.itemsTrans.payment_status;
 
-    if (itemsTransType == "E-Wallet") {
+    if (itemsTransType == "ewallet" && itemsTrans.payment_status == false) {
       var info = {
         itemUsername: itemUsername,
-        itemEBuy: itemEBuy,
+        itemESel: itemESel,
         itemsTransPrice: itemsTransPrice
       };
       var config = {
@@ -2112,7 +2112,9 @@ __webpack_require__.r(__webpack_exports__);
       if (this.itemsWallet.Success == true) {
         var uriFlip = 'api/transaction/flip';
         this.axios.get(uriFlip).then(function (response) {
-          _this.itemsTrans = response.data;
+          _this.itemsTrans = response.data; // this.$router.go();
+
+          location.reload();
         });
       }
     }
@@ -40572,7 +40574,7 @@ var render = function() {
                                   _c("p", { staticClass: "ml-10" }, [
                                     _vm._v(
                                       "Email pembeli: " +
-                                        _vm._s(_vm.itemsUser.email_seller)
+                                        _vm._s(_vm.itemsUser.email_buyer)
                                     )
                                   ]),
                                   _vm._v(" "),

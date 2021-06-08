@@ -28,7 +28,7 @@
                 <v-sheet>
                 <div class="py-3">
                   <p class="ml-10">Nama pembeli: {{ itemsUser.buyer_name }}</p>
-                  <p class="ml-10">Email pembeli: {{ itemsUser.email_seller }}</p>
+                  <p class="ml-10">Email pembeli: {{ itemsUser.email_buyer }}</p>
                   <p class="ml-10">Harga barang: {{ itemsTrans.total_payment }}</p>
                   <p class="ml-10">Jenis Pembayaran: {{ itemsTrans.payment_type }}</p>
                   <p class="ml-10">Status pembayaran: {{ itemsTrans.payment_status }}</p>
@@ -69,15 +69,15 @@ export default {
     });
 
     let itemUsername = this.itemsUser.buyer_name;
-    let itemEBuy = this.itemsUser.email_seller;
+    let itemESel = this.itemsUser.email_seller;
     let itemsTransPrice = this.itemsTrans.total_payment;
     let itemsTransType = this.itemsTrans.payment_type;
     // let itemsTransStatus = this.itemsTrans.payment_status;
 
-    if(itemsTransType == "E-Wallet"){
+    if(itemsTransType == "ewallet" && itemsTrans.payment_status == false){
       let info = {
         itemUsername,
-        itemEBuy,
+        itemESel,
         itemsTransPrice,
       };
 
@@ -91,12 +91,16 @@ export default {
       this.axios.post(uriUser, info, config).then(response => { 
         this.itemsWallet = response.data; 
       });
+
       if(this.itemsWallet.Success == true){
         let uriFlip = 'api/transaction/flip';
         this.axios.get(uriFlip).then(response => { 
-        this.itemsTrans = response.data; 
+        this.itemsTrans = response.data;
+        // this.$router.go();
+        location.reload();
         });
       }
+
     };
 
   },
