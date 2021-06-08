@@ -22,5 +22,7 @@ Route::get('/user_db', 'UserDbController@index');
 
 Route::post('/transaction', 'TransactionController@index');
 
+Route::get('/transaction/status', 'Transaction@status');
+
 // Integrasi ke Markopedia
 // Route::post('/transaction/url', 'TransactionController@index');

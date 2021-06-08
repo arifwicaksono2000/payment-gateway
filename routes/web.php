@@ -25,10 +25,10 @@ Route::get('/test', function () {
     return view('welcome');
 });
 
-Route::get('/payment/{id}/{buyer_name}', function ($id,$buyerName) {
+Route::get('/payment/{buyer_name}/{total_payment}', function ($buyerName, $totalPayment) {
     return view('index',[
-        'id'=>$id,
-        'buyerName'=>$buyerName
+        'total_payment'=>$totalPayment,
+        'buyer_name'=>$buyerName
         ]);
 });
 

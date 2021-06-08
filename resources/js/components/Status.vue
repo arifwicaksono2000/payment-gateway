@@ -47,8 +47,23 @@
 <script>
 import ObjectBar from "./ObjectBar";
 export default {
+  data(){
+    return {
+      items: []
+    }
+  }
   components: {
     "object-bar": ObjectBar,
+  },
+
+  methods:{
+    selectStatus(){
+      // var idPayment = 
+      let uri = '/api/transaction/status';
+        this.axios.post(uri, selected).then((response) => {
+             this.items = response.data;                    
+        });
+    }
   },
 };
 </script>
