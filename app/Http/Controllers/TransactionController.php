@@ -18,20 +18,11 @@ class TransactionController extends Controller
         $transaction = new Transaction;
         $user_db = new UserDb;
 
-        // // Get latest id from Transaction + 1
-        // $transaction_last_id = $transaction->latest('id')->first();
-        // $transaction_one_id = $transaction_last_id + 1;
-
-
-        // Get latest id from UserDb + 1
-        $user_db_last_id = $user_db->latest('id')->first();
-        $user_db_last_id_int = intval($user_db_last_id);
-        // $user_db_one_id = $user_db_last_id + 1;
-
-        $transaction->user_id = $user_db_last_id + 1;
+        // $transaction_last = $transaction->orderBy('id', 'desc')->first()->id;
+        // $intstr = strval($transaction_last);
+        
         $transaction->total_payment = $request->total_payment; // request
         $transaction->payment_status = 'false';
-        // $transaction = $request->payment_type;
 
         $user_db->email_buyer = $request->email_buyer; // request
         $user_db->email_seller = $request->email_seller; // request
@@ -40,10 +31,29 @@ class TransactionController extends Controller
         $transaction->save();
         $user_db->save();
 
+
+        // get latest id from tables
+        $user_db_last_id = $user_db->orderBy('id', 'desc')->first()->id;
+        $transaction_last_id = $transaction->orderBy('id', 'desc')->first()->id;
+
+        // update user_db in latest row of table transaction
+        $current_transaction = $transaction->find($transaction_last_id);
+        $current_transaction->user_id = $user_db_last_id;
+        $current_transaction->save();
+
+        // get latest buyer_name
+        $user_db_last_buyer = $user_db->orderBy('id', 'desc')->first()->buyer_name;
+
+
         return response()->json([
-            'url1'=>'https://payment-gateway-iai.herokuapp.com/'+ $transaction->id,
+            'url1'=>'https://payment-gateway-iai.herokuapp.com/',
             'url2'=>'false'
         ]);
+
+        // return response()->json([
+        //     'url1'=>'https://payment-gateway-iai.herokuapp.com/payment/'.$intstr,
+        //     'url2'=> $transaction_last
+        // ]);
 
         // $transaction = Transaction::get()->toJson(JSON_PRETTY_PRINT);
         // return response($transaction, 200);
@@ -54,9 +64,10 @@ class TransactionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function status(Request $request)
     {
-        //
+        $status = Transaction::find($request)->get();
+        return $status->toJson();
     }
 
     /**
@@ -152,3 +163,7 @@ class TransactionController extends Controller
 
 
 //Route::delete('/stock/{id}', 'StockController@destroy');
+
+// $transaction_payment = Transaction::select('total_payment')->where('id', 1)->get();
+// $transaction_last = $transaction->orderBy('id', 'desc')->first()->id;
+// $transaction_last_id = $transaction_last->id;

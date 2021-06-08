@@ -9,8 +9,8 @@
         >
             <v-list-item-content>
             <v-list-item-title>
-                <p>Barang:</p>
-                <p>Harga:</p>
+                <p>Nama: {{ itemsUser.buyer_name }}</p>
+                <p>Harga: {{ itemsTrans.total_payment }}</p>
             </v-list-item-title>
             </v-list-item-content>
         </v-list-item>
@@ -23,7 +23,7 @@
         >
             <v-list-item-content>
             <v-list-item-title>
-                <strong>Total:</strong>
+                <strong>Total: {{ itemsTrans.total_payment }}</strong>
             </v-list-item-title>
             </v-list-item-content>
         </v-list-item>
@@ -33,5 +33,24 @@
 
 <script>
   export default {
+    data(){
+      return{
+        itemsUser: [],
+        itemsTrans: [],
+      }
+    },
+
+    created(){
+      let uriUser = 'api/user_db/user';
+      this.axios.get(uriUser).then(response => {
+          this.itemsUser = response.data;    
+      });
+
+      let uriTrans = 'api/user_db/transaction';
+      this.axios.get(uriTrans).then(response => {
+          this.itemsTrans = response.data;    
+      });
+      // console.dir('henlo');
+    },
   }
 </script>

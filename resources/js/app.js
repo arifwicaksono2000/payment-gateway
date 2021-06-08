@@ -22,7 +22,7 @@ window.Vue = require('vue');
 
 Vue.component('wireframe', require('./components/Wireframe.vue').default);
 Vue.component('status', require('./components/Status.vue').default);
-
+ 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -43,7 +43,7 @@ const app2 = new Vue({
 //     "post-autoload-dump": [
 //         "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
 //         "@php artisan package:discover --ansi"
-//     ],
+//     ],d
 //     "post-root-package-install": [
 //         "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
 //     ],

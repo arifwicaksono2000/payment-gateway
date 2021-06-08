@@ -1988,7 +1988,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      itemsUser: [],
+      itemsTrans: []
+    };
+  },
+  created: function created() {
+    var _this = this;
+
+    var uriUser = 'api/user_db/user';
+    this.axios.get(uriUser).then(function (response) {
+      _this.itemsUser = response.data;
+    });
+    var uriTrans = 'api/user_db/transaction';
+    this.axios.get(uriTrans).then(function (response) {
+      _this.itemsTrans = response.data;
+    }); // console.dir('henlo');
+  }
+});
 
 /***/ }),
 
@@ -2050,8 +2069,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      items: []
+    };
+  },
   components: {
     "object-bar": _ObjectBar__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  methods: {
+    selectStatus: function selectStatus() {
+      var _this = this;
+
+      // var idPayment = 
+      var uri = '/api/transaction/status';
+      this.axios.post(uri, selected).then(function (response) {
+        _this.items = response.data;
+      });
+    }
   }
 });
 
@@ -2217,8 +2252,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  // props: [
+  //   'buyerName',
+  //   'idTr'
+  // ],
   // data: () => ({
   //   links: [
   //     'Topan',
@@ -2229,13 +2271,22 @@ __webpack_require__.r(__webpack_exports__);
   // }),
   components: {
     'object-bar': _ObjectBar__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  methods: {
+    codClicked: function codClicked() {
+      var uriUser = 'api/user_db/user';
+      this.axios.get(uriUser).then(function (response) {});
+    },
+    walletClicked: function walletClicked() {
+      var uriUser = 'api/user_db/user';
+      this.axios.get(uriUser).then(function (response) {});
+    },
+    vaClicked: function vaClicked() {
+      var uriUser = 'api/user_db/user';
+      this.axios.get(uriUser).then(function (response) {});
+    }
   }
-}); // import header from './Header'
-// export default {
-//   components: {
-//     'header': header
-//   }
-// }
+});
 
 /***/ }),
 
@@ -40318,9 +40369,13 @@ var render = function() {
                   "v-list-item-content",
                   [
                     _c("v-list-item-title", [
-                      _c("p", [_vm._v("Barang:")]),
+                      _c("p", [
+                        _vm._v("Nama: " + _vm._s(_vm.itemsUser.buyer_name))
+                      ]),
                       _vm._v(" "),
-                      _c("p", [_vm._v("Harga:")])
+                      _c("p", [
+                        _vm._v("Harga: " + _vm._s(_vm.itemsTrans.total_payment))
+                      ])
                     ])
                   ],
                   1
@@ -40338,7 +40393,13 @@ var render = function() {
             [
               _c(
                 "v-list-item-content",
-                [_c("v-list-item-title", [_c("strong", [_vm._v("Total:")])])],
+                [
+                  _c("v-list-item-title", [
+                    _c("strong", [
+                      _vm._v("Total: " + _vm._s(_vm.itemsTrans.total_payment))
+                    ])
+                  ])
+                ],
                 1
               )
             ],
@@ -97339,7 +97400,7 @@ var app2 = new Vue({
 //     "post-autoload-dump": [
 //         "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
 //         "@php artisan package:discover --ansi"
-//     ],
+//     ],d
 //     "post-root-package-install": [
 //         "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
 //     ],

@@ -18,8 +18,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/user_db', 'UserDbController@index');
+Route::get('/user_db/user', 'UserDbController@user');
+Route::get('/user_db/transaction', 'UserDbController@trans');
+
+
 Route::post('/transaction', 'TransactionController@index');
+Route::get('/transaction/status', 'Transaction@status');
+Route::get('/transaction/ewallet', 'Transaction@ewallet');
 
 // Integrasi ke Markopedia
 // Route::post('/transaction/url', 'TransactionController@index');

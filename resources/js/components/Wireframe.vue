@@ -51,6 +51,7 @@
                           right
                           bottom
                           href="/status"
+                          @click="codClicked"
                         >
                           Continue
                         </v-btn> -->
@@ -87,6 +88,7 @@
                           right
                           bottom
                           href="/status"
+                          @click="walletClicked"
                         >
                           Continue
                         </v-btn> -->
@@ -131,6 +133,7 @@
                           right
                           bottom
                           href="/status"
+                          @click="vaClicked"
                         >
                           Continue
                         </v-btn> -->
@@ -151,6 +154,10 @@
 <script>
 import ObjectBar from './ObjectBar'
   export default {
+    // props: [
+    //   'buyerName',
+    //   'idTr'
+    // ],
     // data: () => ({
     //   links: [
     //     'Topan',
@@ -162,14 +169,139 @@ import ObjectBar from './ObjectBar'
 
     components: {
       'object-bar': ObjectBar
-    }
-  }
-  
-  // import header from './Header'
-  // export default {
-  //   components: {
-  //     'header': header
-  //   }
-  // }
-  
+    },
+
+    methods: {
+      codClicked(){
+        let uriUser = 'api/user_db/user';
+        this.axios.get(uriUser).then(response => { 
+      });
+
+      },
+
+      walletClicked(){
+        let uriUser = 'api/user_db/user';
+        this.axios.get(uriUser).then(response => { 
+      });
+      },
+
+      vaClicked(){
+        let uriUser = 'api/user_db/user';
+        this.axios.get(uriUser).then(response => { 
+      });
+      }
+
+
+  }  
+}
 </script>
+
+<!-- <script>
+// import moment from 'moment';
+
+// export default {
+//       data() {
+//         return {
+//           dialog: false,
+//           dialogDelete: false,
+//           idDelete: 0,
+
+//           picker: new Date().toISOString().substr(0, 7), //Mengambil string tanggal dari komponen month-picker vuetify
+//           menu: false,
+//           modal: false,
+
+//           items: [],
+//           errors: [],        
+//           postItem: {
+//               RateProduksi_IB: 0,
+//               RateProduksi_III: 0,
+//               RateProduksi_IV: 0,
+//               RateProduksi_IIB: 0,
+//               Produksi_IB: 0,
+//               Produksi_III: 0,
+//               Produksi_IV: 0,
+//               Produksi_IIB: 0,
+//               Produksi_Curah_Granul: 0,
+//               OutputCurah_Pengatongan_PrillSub: 0,
+//               OutputCurah_Pengatongan_GranulNs: 0,
+//               OutputCurah_BBNPK_Prill: 0,
+//               OutputCurah_Agrim_Prill: 0,
+//               OutputCurah_ShippingOut_Prill: 0,
+//               OutputCurah_ShippingOut_Granul: 0,
+//           },
+//         }
+//       },
+
+//     created() { //Mengambil data dari database lalu memasukan kedalam items
+//       var arr1 = this.picker.split('-');
+//       var selected = {indexMonth:arr1[1]};
+//       let uri = 'api/psp2';
+//       this.axios.post(uri, selected).then(response => {
+//           this.items = response.data;
+//       });
+//     },
+
+//     watch: {
+//       dialog (val) {
+//         val || this.close()
+//       },  
+//       dialogDelete (val) {
+//         val || this.closeDelete()
+//       },      
+//     },
+
+//     methods: {   
+//       selectedMonth(){ //Mengambil data dari database berdasarkan bulan dan tahun
+//         var arr1 = this.picker.split('-');
+//         var selected = {indexMonth:arr1[1], indexYear:arr1[0]};
+
+//         let uri = '/api/psp2/filter';
+//         this.axios.post(uri, selected).then((response) => {
+//              this.items = response.data;                    
+//         });
+
+//         this.menu = false;
+//       },
+
+
+//       save () { //Memasukan data kedalam database
+//           let uri = '/api/psp2/store';
+//           this.axios.post(uri, this.postItem).then((response) => {
+//              this.$router.go()                     
+//           });
+//       },
+      
+//       close () {
+//         this.dialog = false
+//       },
+
+//       closeDelete () {
+//         this.dialogDelete = false
+//       },
+
+//       isNumber: function(evt) { //Melarang input selain angka
+//         evt = (evt) ? evt : window.event;
+//         var charCode = (evt.which) ? evt.which : evt.keyCode;
+//         if ((charCode > 31 && (charCode < 48 || charCode > 57)) && charCode !== 46) {
+//           evt.preventDefault();;
+//         } else {
+//           return true;
+//         }
+//       },
+
+//       deleteItemConfirm () { //Delete item 
+//           let uri = `api/psp2/delete/${this.$data.idDelete}`;
+//           this.axios.delete(uri).then(response => {
+//               this.$router.go()
+//           });
+//           console.log("Deleted article with id ..." +this.$data.idDelete);
+//       },
+
+//       deleteItem(id)
+//         {
+//           this.idDelete = id;
+//           this.dialogDelete = true;              
+//       },
+//   }
+// }
+// </script> -->

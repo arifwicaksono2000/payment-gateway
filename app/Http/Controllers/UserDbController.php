@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Transaction; //Lokasi Model
+use App\UserDb;
 
 class UserDbController extends Controller
 {
@@ -11,10 +13,12 @@ class UserDbController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function user()
     {
-        $user_db = \App\UserDb::get()->toJson(JSON_PRETTY_PRINT);
-        return response($user_db, 200);
+        $user_db = new UserDb;
+        $user_db_last = $user_db->orderBy('id', 'desc')->first();
+
+        return $user_db_last->toJson();
         // $user_db = UserDb::where('id', $id)->first();
         // //You can also use
         // /* $footballer = Footballer::find($id); */
@@ -34,9 +38,14 @@ class UserDbController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function trans()
     {
-        //
+        $transaction = new Transaction;
+        // $transaction_last = $transaction->latest('id')->first();
+        $transaction_last = $transaction->orderBy('id', 'desc')->first();
+
+        return $transaction_last->toJson();
+
     }
 
     /**
