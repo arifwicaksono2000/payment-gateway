@@ -93,7 +93,7 @@ class TransactionController extends Controller
             // Update status to true
             $transaction_last_id = $transaction_last->id;
             $current_transaction = $transaction->find($transaction_last_id);
-            $current_transaction->payment_status = 'true';
+            $current_transaction->payment_status = true;
             $current_transaction->save();
 
             return $transaction_last->toJson();
@@ -113,7 +113,7 @@ class TransactionController extends Controller
 
         $transaction_last_id = $transaction_last->id;
         $current_transaction = $transaction->find($transaction_last_id);
-        $current_transaction->payment_status = 'true';
+        $current_transaction->payment_status = true;
         $current_transaction->save();
 
         return $transaction_last->toJson();

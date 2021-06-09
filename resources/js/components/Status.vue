@@ -93,16 +93,16 @@ export default {
         this.itemsWallet = response.data; 
       });
 
-      // if(this.itemsWallet.Success == true){
-      //   let uriFlip = 'api/transaction/flip';
-      //   this.axios.get(uriFlip).then(response => { 
-      //   this.itemsTrans = response.data
-      //   console.log('rambe')
-      //   // this.$router.go()
-      //   // location.reload();
-      //   location.reload()
-      //   });
-      // }
+      if(this.itemsWallet.Success == true){
+        let uriFlip = 'api/transaction/flip';
+        this.axios.get(uriFlip).then(response => { 
+        this.itemsTrans = response.data
+        console.log('rambe')
+        // this.$router.go()
+        // location.reload();
+        location.reload()
+        });
+      }
 
     };
 

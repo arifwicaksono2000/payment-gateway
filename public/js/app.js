@@ -2108,16 +2108,18 @@ __webpack_require__.r(__webpack_exports__);
       var _uriUser = 'mcf-iai.herokuapp.com/transactions/transfer';
       this.axios.post(_uriUser, info, config).then(function (response) {
         _this.itemsWallet = response.data;
-      }); // if(this.itemsWallet.Success == true){
-      //   let uriFlip = 'api/transaction/flip';
-      //   this.axios.get(uriFlip).then(response => { 
-      //   this.itemsTrans = response.data
-      //   console.log('rambe')
-      //   // this.$router.go()
-      //   // location.reload();
-      //   location.reload()
-      //   });
-      // }
+      });
+
+      if (this.itemsWallet.Success == true) {
+        var uriFlip = 'api/transaction/flip';
+        this.axios.get(uriFlip).then(function (response) {
+          _this.itemsTrans = response.data;
+          console.log('rambe'); // this.$router.go()
+          // location.reload();
+
+          location.reload();
+        });
+      }
     }
 
     ;
