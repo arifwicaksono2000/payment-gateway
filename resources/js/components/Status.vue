@@ -67,7 +67,7 @@ export default {
       this.axios.get(uriTrans).then(response => { 
         this.itemsTrans = response.data; 
     });
-    console.log(itemUser)
+    console.log(itemsUser)
 
     let itemUsername = this.itemsUser.buyer_name.toString();
     let itemESel = this.itemsUser.email_seller.toString();
