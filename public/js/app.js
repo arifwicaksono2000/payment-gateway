@@ -2088,7 +2088,6 @@ __webpack_require__.r(__webpack_exports__);
     this.axios.get(uriTrans).then(function (response) {
       _this.itemsTrans = response.data;
     });
-    location.reload();
     console.log('henlo');
     var itemUsername = this.itemsUser.buyer_name;
     var itemESel = this.itemsUser.email_seller;

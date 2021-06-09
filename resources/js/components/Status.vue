@@ -67,7 +67,6 @@ export default {
       this.axios.get(uriTrans).then(response => { 
         this.itemsTrans = response.data; 
     });
-    location.reload()
     console.log('henlo')
 
     let itemUsername = this.itemsUser.buyer_name;
