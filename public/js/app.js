@@ -2093,9 +2093,9 @@ __webpack_require__.r(__webpack_exports__);
     var itemESel = this.itemsUser.email_seller;
     var itemsTransPrice = this.itemsTrans.total_payment;
     var itemsTransType = this.itemsTrans.payment_type;
-    var itemsTransStatus = itemsTrans.payment_status;
+    var itemsTransStatus = this.itemsTrans.payment_status;
     console.log('this');
-    console.log(itemsTransStatus);
+    console.log(itemsTransType);
 
     if (itemsTransType == "ewallet" && itemsTransStatus == false) {
       console.log('if statement worked');
