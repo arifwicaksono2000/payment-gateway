@@ -50,14 +50,14 @@ export default {
     return {
       itemsUser: [],
       itemsTrans: [],
-      itemsWallet: [],
-      data: {
-            buyer_name: "",
-            email_seller: "",
-            total_payment: 0,
-            payment_type:"",
-            payment_status: null
-        },
+      itemsWallet: []
+      // data: {
+      //       buyer_name: "",
+      //       email_seller: "",
+      //       total_payment: 0,
+      //       payment_type:"",
+      //       payment_status: null
+      //   },
     }
   },
   // components: {
@@ -69,24 +69,34 @@ export default {
         this.axios.get(uriUser)
         .then(response => { 
           this.itemsUser = response.data;
-      }).then(this.buyer_name = buyer_name);
+      });
 
     let uriTrans = 'api/transaction/transaction';
       this.axios.get(uriTrans).then(response => { 
         this.itemsTrans = response.data;
 
     });
-    console.log(itemsUser)
 
-    let itemUsername = this.data.buyer_namel;
-    let itemESel = this.itemsUser.email_seller.toString();
-    let itemsTransPrice = this.itemsTrans.total_payment.toString();
-    let itemsTransType = this.itemsTrans.payment_type;
-    let itemsTransType2 = itemsTransType.toString();
-    let itemsTransStatus = this.itemsTrans.payment_status.toString();
+    // let uriFlip = 'api/transaction/flip';
+    //     this.axios.get(uriFlip).then(response => { 
+    //     this.itemsTrans = response.data
+    //     console.log('flipped worked')
+    //     // this.$router.go()
+    //     // location.reload();
+    //     location.reload()
+    //     });
 
-    console.log('this')
-    console.log(itemsTransType2)
+    // let itemUsername = "";
+    // console.log(itemsUser[1]);
+    // let itemsTransPrice = this.itemsTrans.total_payment.toString();
+    // let itemsTransType = this.itemsTrans.payment_type;
+    // let itemsTransType2 = itemsTransType.toString();
+    // let itemsTransStatus = this.itemsTrans.payment_status.toString();
+
+
+
+    // console.log('this')
+    // console.log(itemsTransType2)
 
     if(itemsTransType == "ewallet" && itemsTransStatus == false){
       console.log('if statement worked')

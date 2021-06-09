@@ -85,25 +85,35 @@ class TransactionController extends Controller
         $transaction_last = $transaction->orderBy('id', 'desc')->first();
 
         $transaction_type = $transaction_last->payment_type;
+        $transaction_last_id = $transaction_last->id;
+        $current_transaction = $transaction->find($transaction_last_id);
+        $current_transaction->payment_status = true;
+        $current_transaction->save();
 
-        if($transaction_type == "ewallet"){
-            $transaction_last = $transaction->orderBy('id', 'desc')->first();
+        sleep(3);
 
-            return $transaction_last->toJson();
-        }
-        else{
-            // Update status to true
-            $transaction_last_id = $transaction_last->id;
-            $current_transaction = $transaction->find($transaction_last_id);
-            $current_transaction->payment_status = true;
-            $current_transaction->save();
+        $transaction_last = $transaction->orderBy('id', 'desc')->first();
 
-            sleep(3);
+        return $transaction_last->toJson();
 
-            $transaction_last = $transaction->orderBy('id', 'desc')->first();
+        // if($transaction_type == "ewallet"){
+        //     $transaction_last = $transaction->orderBy('id', 'desc')->first();
 
-            return $transaction_last->toJson();
-        }
+        //     return $transaction_last->toJson();
+        // }
+        // else{
+        //     // Update status to true
+        //     $transaction_last_id = $transaction_last->id;
+        //     $current_transaction = $transaction->find($transaction_last_id);
+        //     $current_transaction->payment_status = true;
+        //     $current_transaction->save();
+
+        //     sleep(3);
+
+        //     $transaction_last = $transaction->orderBy('id', 'desc')->first();
+
+        //     return $transaction_last->toJson();
+        // }
     }
 
     /**
