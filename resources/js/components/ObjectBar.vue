@@ -38,6 +38,7 @@
       return{
         itemsUser: [],
         itemsTrans: [],
+        item:[]
       }
     },
 
