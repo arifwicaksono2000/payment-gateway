@@ -50,7 +50,7 @@ export default {
     return {
       itemsUser: [],
       itemsTrans: [],
-      itemsWallet: []
+      itemsWallet: [],
     }
   },
   // components: {
@@ -67,7 +67,7 @@ export default {
       this.axios.get(uriTrans).then(response => { 
         this.itemsTrans = response.data; 
     });
-    console.log('henlo')
+    console.log(itemUser)
 
     let itemUsername = this.itemsUser.buyer_name.toString();
     let itemESel = this.itemsUser.email_seller.toString();

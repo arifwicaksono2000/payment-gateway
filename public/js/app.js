@@ -2088,7 +2088,7 @@ __webpack_require__.r(__webpack_exports__);
     this.axios.get(uriTrans).then(function (response) {
       _this.itemsTrans = response.data;
     });
-    console.log('henlo');
+    console.log(itemUser);
     var itemUsername = this.itemsUser.buyer_name.toString();
     var itemESel = this.itemsUser.email_seller.toString();
     var itemsTransPrice = this.itemsTrans.total_payment.toString();
