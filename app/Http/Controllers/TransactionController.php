@@ -87,6 +87,8 @@ class TransactionController extends Controller
         $transaction_type = $transaction_last->payment_type;
 
         if($transaction_type == "ewallet"){
+            $transaction_last = $transaction->orderBy('id', 'desc')->first();
+
             return $transaction_last->toJson();
         }
         else{
@@ -97,6 +99,8 @@ class TransactionController extends Controller
             $current_transaction->save();
 
             sleep(3);
+
+            $transaction_last = $transaction->orderBy('id', 'desc')->first();
 
             return $transaction_last->toJson();
         }
@@ -119,6 +123,8 @@ class TransactionController extends Controller
         $current_transaction->save();
 
         sleep(3);
+
+        $transaction_last = $transaction->orderBy('id', 'desc')->first();
 
         return $transaction_last->toJson();
     }
