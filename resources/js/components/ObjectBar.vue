@@ -11,6 +11,7 @@
             <v-list-item-title>
                 <p>Nama: {{ itemsUser.buyer_name }}</p>
                 <p>Harga: {{ itemsTrans.total_payment }}</p>
+                <p>Status: {{ itemsTrans.payment_status }}</p>
             </v-list-item-title>
             </v-list-item-content>
         </v-list-item>
