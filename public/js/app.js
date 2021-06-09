@@ -2089,11 +2089,11 @@ __webpack_require__.r(__webpack_exports__);
       _this.itemsTrans = response.data;
     });
     console.log('henlo');
-    var itemUsername = this.itemsUser.buyer_name;
-    var itemESel = this.itemsUser.email_seller;
-    var itemsTransPrice = this.itemsTrans.total_payment;
-    var itemsTransType = this.itemsTrans.payment_type;
-    var itemsTransStatus = this.itemsTrans.payment_status;
+    var itemUsername = strval(this.itemsUser.buyer_name);
+    var itemESel = strval(this.itemsUser.email_seller);
+    var itemsTransPrice = strval(this.itemsTrans.total_payment);
+    var itemsTransType = strval(this.itemsTrans.payment_type);
+    var itemsTransStatus = strval(this.itemsTrans.payment_status);
     console.log('this');
     console.log(itemsTransType);
 
