@@ -24,8 +24,10 @@ Route::get('/user_db/transaction', 'UserDbController@trans');
 
 Route::post('/transaction', 'TransactionController@index');
 Route::post('/transaction/type', 'TransactionController@type');
+
 Route::get('/transaction/user', 'TransactionController@user');
 Route::get('/transaction/transaction', 'TransactionController@trans');
+
 Route::get('/transaction/flip', 'TransactionController@flip');
 Route::get('/transaction/status/{id}', 'TransactionController@status');
 

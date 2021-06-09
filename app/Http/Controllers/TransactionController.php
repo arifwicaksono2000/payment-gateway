@@ -96,6 +96,8 @@ class TransactionController extends Controller
             $current_transaction->payment_status = true;
             $current_transaction->save();
 
+            sleep(3);
+
             return $transaction_last->toJson();
         }
     }
@@ -115,6 +117,8 @@ class TransactionController extends Controller
         $current_transaction = $transaction->find($transaction_last_id);
         $current_transaction->payment_status = true;
         $current_transaction->save();
+
+        sleep(3);
 
         return $transaction_last->toJson();
     }
