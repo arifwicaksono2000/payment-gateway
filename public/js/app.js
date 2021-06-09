@@ -2094,6 +2094,7 @@ __webpack_require__.r(__webpack_exports__);
     var itemsTransType = this.itemsTrans.payment_type; // let itemsTransStatus = this.itemsTrans.payment_status;
 
     if (itemsTransType == "ewallet" && itemsTrans.payment_status == false) {
+      console.log('henlo');
       var info = {
         itemUsername: itemUsername,
         itemESel: itemESel,
@@ -2107,17 +2108,16 @@ __webpack_require__.r(__webpack_exports__);
       var _uriUser = 'mcf-iai.herokuapp.com/transactions/transfer';
       this.axios.post(_uriUser, info, config).then(function (response) {
         _this.itemsWallet = response.data;
-      });
-
-      if (this.itemsWallet.Success == true) {
-        var uriFlip = 'api/transaction/flip';
-        this.axios.get(uriFlip).then(function (response) {
-          _this.itemsTrans = response.data; // this.$router.go()
-          // location.reload();
-
-          window.location.reload();
-        });
-      }
+      }); // if(this.itemsWallet.Success == true){
+      //   let uriFlip = 'api/transaction/flip';
+      //   this.axios.get(uriFlip).then(response => { 
+      //   this.itemsTrans = response.data
+      //   console.log('rambe')
+      //   // this.$router.go()
+      //   // location.reload();
+      //   location.reload()
+      //   });
+      // }
     }
 
     ;
@@ -2144,6 +2144,17 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ObjectBar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ObjectBar */ "./resources/js/components/ObjectBar.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2327,7 +2338,10 @@ __webpack_require__.r(__webpack_exports__);
       var data = event.target.value;
       this.item.dataSelected = data;
       console.log(data);
-    }
+    } // reloadOnce(){
+    //   location.reload()
+    // }
+
   }
 });
 
@@ -40659,7 +40673,23 @@ var render = function() {
             [
               _c("v-toolbar-title", [
                 _c("h3", [_vm._v("Payment Gateway Markopedia")])
-              ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "v-btn",
+                {
+                  staticClass: "white--text",
+                  attrs: {
+                    color: "blue ",
+                    elevation: "2",
+                    absolute: "",
+                    right: "",
+                    bottom: ""
+                  },
+                  on: { click: _vm.reloadOnce }
+                },
+                [_vm._v("\n              Reload\n            ")]
+              )
             ],
             1
           )
@@ -41054,7 +41084,7 @@ var render = function() {
                                 },
                                 [
                                   _vm._v(
-                                    "\n                  Continue\n                "
+                                    "\n              Continue\n            "
                                   )
                                 ]
                               )

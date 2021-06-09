@@ -75,6 +75,7 @@ export default {
     // let itemsTransStatus = this.itemsTrans.payment_status;
 
     if(itemsTransType == "ewallet" && itemsTrans.payment_status == false){
+      console.log('henlo')
       let info = {
         itemUsername,
         itemESel,
@@ -92,15 +93,16 @@ export default {
         this.itemsWallet = response.data; 
       });
 
-      if(this.itemsWallet.Success == true){
-        let uriFlip = 'api/transaction/flip';
-        this.axios.get(uriFlip).then(response => { 
-        this.itemsTrans = response.data
-        // this.$router.go()
-        // location.reload();
-        window.location.reload()
-        });
-      }
+      // if(this.itemsWallet.Success == true){
+      //   let uriFlip = 'api/transaction/flip';
+      //   this.axios.get(uriFlip).then(response => { 
+      //   this.itemsTrans = response.data
+      //   console.log('rambe')
+      //   // this.$router.go()
+      //   // location.reload();
+      //   location.reload()
+      //   });
+      // }
 
     };
 

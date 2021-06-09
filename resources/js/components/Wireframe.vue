@@ -5,6 +5,17 @@
         <v-toolbar-title>
           <h3>Payment Gateway Markopedia</h3> 
         </v-toolbar-title>
+        <v-btn
+                class="white--text"
+                color="blue "
+                elevation="2"
+                absolute
+                right
+                bottom
+                @click="reloadOnce"
+              >
+                Reload
+              </v-btn>
       </v-container>
     </v-app-bar>
     <v-main class="grey lighten-3">
@@ -122,16 +133,16 @@
                 </v-expansion-panels>
               </v-col>
               <v-btn
-                    class="white--text"
-                    color="blue "
-                    elevation="2"
-                    absolute
-                    right
-                    bottom
-                    @click="typeChosen"
-                  >
-                    Continue
-                  </v-btn>
+                class="white--text"
+                color="blue "
+                elevation="2"
+                absolute
+                right
+                bottom
+                @click="typeChosen"
+              >
+                Continue
+              </v-btn>
             </v-sheet>
             </v-radio-group>
           </v-col>
@@ -178,11 +189,14 @@ import ObjectBar from './ObjectBar'
           // window.open('/status', '_blank') --> untuk new tab
       });
     },
-    onChange(event){
-      var data = event.target.value;
-      this.item.dataSelected = data;
-      console.log(data);
-    }
+      onChange(event){
+        var data = event.target.value;
+        this.item.dataSelected = data;
+        console.log(data);
+      },
+      // reloadOnce(){
+      //   location.reload()
+      // }
 
   }  
 }

@@ -47,7 +47,7 @@ class TransactionController extends Controller
 
         return response()->json([
             'url1'=>'https://payment-gateway-iai.herokuapp.com/',
-            'url2'=> 'false'
+            'url2'=> $transaction_last_id
         ]);
 
         // return response()->json([
@@ -86,7 +86,7 @@ class TransactionController extends Controller
 
         $transaction_type = $transaction_last->payment_type;
 
-        if($transaction_type == "E-Wallet"){
+        if($transaction_type == "ewallet"){
             return $transaction_last->toJson();
         }
         else{
@@ -132,6 +132,24 @@ class TransactionController extends Controller
         $current_transaction->save();
 
         return true;
+    }
+
+    public function status($id)
+    {
+        $transaction = new Transaction;
+        $current_transaction = $transaction->find($id);
+        $transaction_last_status = $current_transaction->payment_status
+
+        if ($transaction_last_status == true){
+            return response()->json([
+                'status'=> 'true'
+            ]);
+        }
+        else{
+            return response()->json([
+                'status'=> 'false'
+            ]);
+        }
     }
 
     /**

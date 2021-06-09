@@ -27,6 +27,7 @@ Route::post('/transaction/type', 'TransactionController@type');
 Route::get('/transaction/user', 'TransactionController@user');
 Route::get('/transaction/transaction', 'TransactionController@trans');
 Route::get('/transaction/flip', 'TransactionController@flip');
+Route::get('/transaction/status/{id}', 'TransactionController@status');
 
 // Integrasi ke Markopedia
 // Route::post('/transaction/url', 'TransactionController@index');
