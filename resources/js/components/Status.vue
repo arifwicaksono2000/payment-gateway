@@ -72,11 +72,12 @@ export default {
     let itemUsername = this.itemsUser.buyer_name.toString();
     let itemESel = this.itemsUser.email_seller.toString();
     let itemsTransPrice = this.itemsTrans.total_payment.toString();
-    let itemsTransType = this.itemsTrans.payment_type.toString();
+    let itemsTransType = this.itemsTrans.payment_type;
+    let itemsTransType2 = itemsTransType.toString();
     let itemsTransStatus = this.itemsTrans.payment_status.toString();
 
     console.log('this')
-    console.log(itemsTransType)
+    console.log(itemsTransType2)
 
     if(itemsTransType == "ewallet" && itemsTransStatus == false){
       console.log('if statement worked')

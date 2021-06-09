@@ -2092,10 +2092,11 @@ __webpack_require__.r(__webpack_exports__);
     var itemUsername = this.itemsUser.buyer_name.toString();
     var itemESel = this.itemsUser.email_seller.toString();
     var itemsTransPrice = this.itemsTrans.total_payment.toString();
-    var itemsTransType = this.itemsTrans.payment_type.toString();
+    var itemsTransType = this.itemsTrans.payment_type;
+    var itemsTransType2 = itemsTransType.toString();
     var itemsTransStatus = this.itemsTrans.payment_status.toString();
     console.log('this');
-    console.log(itemsTransType);
+    console.log(itemsTransType2);
 
     if (itemsTransType == "ewallet" && itemsTransStatus == false) {
       console.log('if statement worked');
