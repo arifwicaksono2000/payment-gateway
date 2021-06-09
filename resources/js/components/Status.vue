@@ -69,11 +69,11 @@ export default {
     });
     console.log('henlo')
 
-    let itemUsername = strval(this.itemsUser.buyer_name);
-    let itemESel = strval(this.itemsUser.email_seller);
-    let itemsTransPrice = strval(this.itemsTrans.total_payment);
-    let itemsTransType = strval(this.itemsTrans.payment_type);
-    let itemsTransStatus = strval(this.itemsTrans.payment_status);
+    let itemUsername = this.itemsUser.buyer_name.toString();
+    let itemESel = this.itemsUser.email_seller.toString();
+    let itemsTransPrice = this.itemsTrans.total_payment.toString();
+    let itemsTransType = this.itemsTrans.payment_type.toString();
+    let itemsTransStatus = this.itemsTrans.payment_status.toString();
 
     console.log('this')
     console.log(itemsTransType)
