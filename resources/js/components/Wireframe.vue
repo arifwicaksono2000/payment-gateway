@@ -5,7 +5,7 @@
         <v-toolbar-title>
           <h3>Payment Gateway Markopedia</h3> 
         </v-toolbar-title>
-        <v-btn
+        <!--<v-btn
                 class="white--text"
                 color="blue "
                 elevation="2"
@@ -15,7 +15,7 @@
                 @click="reloadOnce"
               >
                 Reload
-              </v-btn>
+              </v-btn>-->
       </v-container>
     </v-app-bar>
     <v-main class="grey lighten-3">

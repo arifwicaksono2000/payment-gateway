@@ -2088,6 +2088,8 @@ __webpack_require__.r(__webpack_exports__);
     this.axios.get(uriTrans).then(function (response) {
       _this.itemsTrans = response.data;
     });
+    location.reload();
+    console.log('henlo');
     var itemUsername = this.itemsUser.buyer_name;
     var itemESel = this.itemsUser.email_seller;
     var itemsTransPrice = this.itemsTrans.total_payment;
@@ -40675,23 +40677,7 @@ var render = function() {
             [
               _c("v-toolbar-title", [
                 _c("h3", [_vm._v("Payment Gateway Markopedia")])
-              ]),
-              _vm._v(" "),
-              _c(
-                "v-btn",
-                {
-                  staticClass: "white--text",
-                  attrs: {
-                    color: "blue ",
-                    elevation: "2",
-                    absolute: "",
-                    right: "",
-                    bottom: ""
-                  },
-                  on: { click: _vm.reloadOnce }
-                },
-                [_vm._v("\n              Reload\n            ")]
-              )
+              ])
             ],
             1
           )
