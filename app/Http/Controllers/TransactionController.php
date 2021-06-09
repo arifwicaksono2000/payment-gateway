@@ -138,9 +138,9 @@ class TransactionController extends Controller
     {
         $transaction = new Transaction;
         $current_transaction = $transaction->find($id);
-        $transaction_last_status = $current_transaction->payment_status
+        $transaction_last_status = $current_transaction->payment_status;
 
-        if ($transaction_last_status == true){
+        if($transaction_last_status == true){
             return response()->json([
                 'status'=> 'true'
             ]);
