@@ -51,6 +51,13 @@ export default {
       itemsUser: [],
       itemsTrans: [],
       itemsWallet: [],
+      data: {
+            buyer_name: "",
+            email_seller: "",
+            total_payment: 0,
+            payment_type:"",
+            payment_status: null
+        },
     }
   },
   // components: {
@@ -59,17 +66,19 @@ export default {
 
   created() {
     let uriUser = 'api/transaction/user';
-        this.axios.get(uriUser).then(response => { 
+        this.axios.get(uriUser)
+        .then(response => { 
           this.itemsUser = response.data;
-      });
+      }).then(this.buyer_name = buyer_name);
 
     let uriTrans = 'api/transaction/transaction';
       this.axios.get(uriTrans).then(response => { 
-        this.itemsTrans = response.data; 
+        this.itemsTrans = response.data;
+
     });
     console.log(itemsUser)
 
-    let itemUsername = this.itemsUser.buyer_name.toString();
+    let itemUsername = this.data.buyer_namel;
     let itemESel = this.itemsUser.email_seller.toString();
     let itemsTransPrice = this.itemsTrans.total_payment.toString();
     let itemsTransType = this.itemsTrans.payment_type;

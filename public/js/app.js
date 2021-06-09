@@ -2071,7 +2071,14 @@ __webpack_require__.r(__webpack_exports__);
     return {
       itemsUser: [],
       itemsTrans: [],
-      itemsWallet: []
+      itemsWallet: [],
+      data: {
+        buyer_name: "",
+        email_seller: "",
+        total_payment: 0,
+        payment_type: "",
+        payment_status: null
+      }
     };
   },
   // components: {
@@ -2083,13 +2090,13 @@ __webpack_require__.r(__webpack_exports__);
     var uriUser = 'api/transaction/user';
     this.axios.get(uriUser).then(function (response) {
       _this.itemsUser = response.data;
-    });
+    }).then(this.buyer_name = buyer_name);
     var uriTrans = 'api/transaction/transaction';
     this.axios.get(uriTrans).then(function (response) {
       _this.itemsTrans = response.data;
     });
     console.log(itemsUser);
-    var itemUsername = this.itemsUser.buyer_name.toString();
+    var itemUsername = this.data.buyer_namel;
     var itemESel = this.itemsUser.email_seller.toString();
     var itemsTransPrice = this.itemsTrans.total_payment.toString();
     var itemsTransType = this.itemsTrans.payment_type;
