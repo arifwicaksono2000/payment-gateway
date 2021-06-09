@@ -3,9 +3,6 @@
     <v-sheet rounded="lg">
         <v-list color="transparent">
         <v-list-item
-            v-for="n in 1"
-            :key="n"
-            link
         >
             <v-list-item-content>
             <v-list-item-title>

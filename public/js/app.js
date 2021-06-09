@@ -1986,9 +1986,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -40454,36 +40451,31 @@ var render = function() {
         "v-list",
         { attrs: { color: "transparent" } },
         [
-          _vm._l(1, function(n) {
-            return _c(
-              "v-list-item",
-              { key: n, attrs: { link: "" } },
-              [
-                _c(
-                  "v-list-item-content",
-                  [
-                    _c("v-list-item-title", [
-                      _c("p", [
-                        _vm._v("Nama: " + _vm._s(_vm.itemsUser.buyer_name))
-                      ]),
-                      _vm._v(" "),
-                      _c("p", [
-                        _vm._v("Harga: " + _vm._s(_vm.itemsTrans.total_payment))
-                      ]),
-                      _vm._v(" "),
-                      _c("p", [
-                        _vm._v(
-                          "Status: " + _vm._s(_vm.itemsTrans.payment_status)
-                        )
-                      ])
+          _c(
+            "v-list-item",
+            [
+              _c(
+                "v-list-item-content",
+                [
+                  _c("v-list-item-title", [
+                    _c("p", [
+                      _vm._v("Nama: " + _vm._s(_vm.itemsUser.buyer_name))
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v("Harga: " + _vm._s(_vm.itemsTrans.total_payment))
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v("Status: " + _vm._s(_vm.itemsTrans.payment_status))
                     ])
-                  ],
-                  1
-                )
-              ],
-              1
-            )
-          }),
+                  ])
+                ],
+                1
+              )
+            ],
+            1
+          ),
           _vm._v(" "),
           _c("v-divider", { staticClass: "my-2" }),
           _vm._v(" "),
@@ -40506,7 +40498,7 @@ var render = function() {
             1
           )
         ],
-        2
+        1
       )
     ],
     1
