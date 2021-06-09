@@ -86,12 +86,13 @@ export default {
     //     location.reload()
     //     });
 
-    // let itemUsername = "";
-    // console.log(itemsUser[1]);
-    // let itemsTransPrice = this.itemsTrans.total_payment.toString();
-    // let itemsTransType = this.itemsTrans.payment_type;
-    // let itemsTransType2 = itemsTransType.toString();
-    // let itemsTransStatus = this.itemsTrans.payment_status.toString();
+    let itemUsername = "";
+    let itemsTransPrice = this.$data.itemsTrans.total_payment;
+    let itemsTransType = this.itemsTrans.payment_type;
+    let itemsTransType2 = itemsTransType.toString();
+    let itemsTransStatus = this.itemsTrans.payment_status.toString();
+
+    console.log(itemsTransPrice);
 
 
 

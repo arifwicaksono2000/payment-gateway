@@ -2101,13 +2101,13 @@ __webpack_require__.r(__webpack_exports__);
     //     // location.reload();
     //     location.reload()
     //     });
-    // let itemUsername = "";
-    // console.log(itemsUser[1]);
-    // let itemsTransPrice = this.itemsTrans.total_payment.toString();
-    // let itemsTransType = this.itemsTrans.payment_type;
-    // let itemsTransType2 = itemsTransType.toString();
-    // let itemsTransStatus = this.itemsTrans.payment_status.toString();
-    // console.log('this')
+
+    var itemUsername = "";
+    var itemsTransPrice = this.$data.itemsTrans.total_payment;
+    var itemsTransType = this.itemsTrans.payment_type;
+    var itemsTransType2 = itemsTransType.toString();
+    var itemsTransStatus = this.itemsTrans.payment_status.toString();
+    console.log(itemsTransPrice); // console.log('this')
     // console.log(itemsTransType2)
 
     if (itemsTransType == "ewallet" && itemsTransStatus == false) {
@@ -2164,17 +2164,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ObjectBar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ObjectBar */ "./resources/js/components/ObjectBar.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
