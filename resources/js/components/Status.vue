@@ -76,7 +76,7 @@ export default {
     // let itemsTransStatus = this.itemsTrans.payment_status;
 
     if(itemsTransType == "ewallet" && itemsTrans.payment_status == false){
-      console.log('henlo')
+      console.log('if statement worked')
       let info = {
         itemUsername,
         itemESel,
@@ -94,11 +94,13 @@ export default {
         this.itemsWallet = response.data; 
       });
 
+      console.log('wallet transfer worked')
+
       if(this.itemsWallet.Success == true){
         let uriFlip = 'api/transaction/flip';
         this.axios.get(uriFlip).then(response => { 
         this.itemsTrans = response.data
-        console.log('rambe')
+        console.log('flipped worked')
         // this.$router.go()
         // location.reload();
         location.reload()

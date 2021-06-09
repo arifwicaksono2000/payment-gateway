@@ -2095,7 +2095,7 @@ __webpack_require__.r(__webpack_exports__);
     var itemsTransType = this.itemsTrans.payment_type; // let itemsTransStatus = this.itemsTrans.payment_status;
 
     if (itemsTransType == "ewallet" && itemsTrans.payment_status == false) {
-      console.log('henlo');
+      console.log('if statement worked');
       var info = {
         itemUsername: itemUsername,
         itemESel: itemESel,
@@ -2110,12 +2110,13 @@ __webpack_require__.r(__webpack_exports__);
       this.axios.post(_uriUser, info, config).then(function (response) {
         _this.itemsWallet = response.data;
       });
+      console.log('wallet transfer worked');
 
       if (this.itemsWallet.Success == true) {
         var uriFlip = 'api/transaction/flip';
         this.axios.get(uriFlip).then(function (response) {
           _this.itemsTrans = response.data;
-          console.log('rambe'); // this.$router.go()
+          console.log('flipped worked'); // this.$router.go()
           // location.reload();
 
           location.reload();
