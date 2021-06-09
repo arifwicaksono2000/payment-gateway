@@ -75,6 +75,7 @@ export default {
     let itemsTransType = this.itemsTrans.payment_type;
     let itemsTransStatus = this.itemsTrans.payment_status;
 
+    console.log('this')
     console.log(itemsTransStatus)
 
     if(itemsTransType == "ewallet" && itemsTransStatus == false){
